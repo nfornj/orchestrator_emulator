@@ -20,6 +20,9 @@ services:
       - SPECIALTY_SERVICE_URL=http://mock-services:8003/specialty
       # Database connection settings
       - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/orchestrator
+      # PDM environment variables
+      - PYTHONPATH=/app:/app/__pypackages__/3.12/lib
+      - PATH=/app/__pypackages__/3.12/bin:$PATH
     depends_on:
       - kafka
       - azurite
@@ -27,6 +30,8 @@ services:
       - postgres
     volumes:
       - ./app:/app/app
+      - ./pyproject.toml:/app/pyproject.toml
+      - ./pdm.lock:/app/pdm.lock
     networks:
       - eh-emulator-network
     restart: on-failure

@@ -11,6 +11,7 @@ from fastapi.responses import JSONResponse
 from starlette.middleware.base import BaseHTTPMiddleware
 
 from app.api.endpoints import router as api_router
+from app.orchestrators.router import router as orchestrator_router
 from app.services.event_hub import EventHubConsumer, EventData
 # Import the Kafka implementation
 from app.services.kafka_event_hub import KafkaEventHubConsumer
@@ -24,6 +25,7 @@ from app.services.task_tracking import TaskTrackingService
 from app.schemas.task_tracking import TaskCreate
 from app.models.task_tracking import TaskStatus
 from app.utils import JSONEncoder
+from app.middleware import JSONEncoderMiddleware
 from alembic.config import Config
 from alembic import command
 
@@ -141,37 +143,6 @@ async def process_amqp_events(events):
             logger.error(f"Error processing AMQP event: {str(e)}")
 
 
-class JSONEncoderMiddleware(BaseHTTPMiddleware):
-    """
-    Middleware to handle UUID serialization for responses.
-    """
-    async def dispatch(self, request: Request, call_next):
-        # Process the request and get the response
-        response = await call_next(request)
-        
-        # If the response is a JSONResponse, update the body with our encoder
-        if isinstance(response, JSONResponse):
-            # Get the original response body as a dict
-            body = response.body.decode()
-            try:
-                # Parse the body
-                data = json.loads(body)
-                # Re-encode with our custom encoder
-                new_body = json.dumps(data, cls=JSONEncoder).encode()
-                # Create a new response with the same status code and headers
-                return Response(
-                    content=new_body,
-                    status_code=response.status_code,
-                    headers=dict(response.headers),
-                    media_type=response.media_type
-                )
-            except json.JSONDecodeError:
-                # If the body is not valid JSON, just return the original response
-                pass
-        
-        return response
-
-
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """
@@ -255,6 +226,7 @@ app.add_middleware(JSONEncoderMiddleware)
 
 # Include API routers
 app.include_router(api_router, prefix="/api")
+app.include_router(orchestrator_router, prefix="/orchestrator")
 
 
 @app.get("/health")

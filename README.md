@@ -15,7 +15,49 @@ The architecture consists of:
 ## Prerequisites
 
 - Docker and Docker Compose
-- Python 3.8+
+- Python 3.12+
+- PDM (Python Dependency Manager)
+
+## Package Management with PDM
+
+This project uses [PDM (Python Development Master)](https://pdm.fming.dev/) for dependency management.
+
+### Setup with PDM
+
+1. Install PDM:
+
+   ```bash
+   pip install --user pdm
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   pdm install
+   ```
+
+3. Run a command using PDM:
+
+   ```bash
+   pdm run python -m app.main
+   ```
+
+4. Add a new dependency:
+
+   ```bash
+   pdm add <package-name>
+   ```
+
+5. Update dependencies:
+   ```bash
+   pdm update
+   ```
+
+For convenience, you can also use the `setup_pdm.sh` script:
+
+```bash
+./setup_pdm.sh
+```
 
 ## Project Structure
 
@@ -42,7 +84,8 @@ orchestrator_emulator/
 ├── run_emulator.sh             # Helper script to run Kafka and other services
 ├── Dockerfile                  # Docker configuration for the orchestrator
 ├── docker-compose.yml          # Docker Compose configuration
-└── requirements.txt            # Python dependencies
+├── pyproject.toml              # Project dependencies and configuration (PDM)
+└── pdm.lock                    # Lock file for PDM dependencies
 ```
 
 ## Setup & Running
@@ -87,10 +130,10 @@ orchestrator_emulator/
 
 ### Local Development
 
-1. Install dependencies:
+1. Install dependencies using PDM:
 
    ```bash
-   pip install -r requirements.txt
+   pdm install
    ```
 
 2. Start Kafka and other services:
@@ -113,15 +156,16 @@ orchestrator_emulator/
 
    ```bash
    cd mock-services
-   uvicorn app:app --host 0.0.0.0 --port 8001
+   pdm install
+   pdm run uvicorn app:app --host 0.0.0.0 --port 8001
    # In separate terminals:
-   uvicorn app:app --host 0.0.0.0 --port 8002
-   uvicorn app:app --host 0.0.0.0 --port 8003
+   pdm run uvicorn app:app --host 0.0.0.0 --port 8002
+   pdm run uvicorn app:app --host 0.0.0.0 --port 8003
    ```
 
 5. Run the FastAPI application:
    ```bash
-   uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+   pdm run uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
    ```
 
 ## API Endpoints
@@ -321,3 +365,32 @@ For production deployment:
 ## License
 
 [Include license information here]
+
+## Docker Development
+
+The project includes a PDM-integrated Dockerfile and docker-compose setup:
+
+```bash
+docker-compose up -d
+```
+
+## Using Dev Container
+
+This project includes a VS Code Dev Container configuration. To use it:
+
+1. Install the [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension
+2. Open the project folder in VS Code
+3. Click on the "Reopen in Container" prompt or run the "Remote-Containers: Reopen in Container" command
+
+## API Documentation
+
+The API documentation is available at `http://localhost:8000/docs` when the service is running.
+
+## Environment Variables
+
+The following environment variables can be set:
+
+- `DEBUG`: Enable debug mode (default: False)
+- `USE_KAFKA`: Use Kafka for message transport (default: False)
+- `USE_HTTP`: Use HTTP for message transport (default: False)
+- `USE_EVENT_HUB`: Use Azure Event Hub for message transport (default: False)

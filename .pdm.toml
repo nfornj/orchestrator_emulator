@@ -1,0 +1,13 @@
+[python]
+path = "python3"
+use_venv = false
+verify_ssl = true
+
+[tool]
+use_pdm_backend = true
+
+[venv]
+location = {root_path = "__pypackages__"}
+
+[project]
+allow_prereleases = false 
