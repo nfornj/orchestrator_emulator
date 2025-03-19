@@ -11,6 +11,7 @@ from sqlalchemy import select
 from app.models import OrchestratorRequest, OrchestratorResponse
 from app.services.orchestrator import OrchestratorService
 from app.services.event_hub import EventHubProducer
+from app.services.kafka_event_hub import KafkaEventHubProducer
 from app.database import get_db_dependency, get_db
 from app.services.task_tracking import TaskTrackingService
 from app.models.task_tracking import TaskStatus, ServiceStatus, Task
@@ -27,8 +28,9 @@ router = APIRouter()
 # Initialize services
 orchestrator_service = OrchestratorService()
 
-# Check if we should use Event Hub
+# Check environment variables
 USE_EVENT_HUB = os.environ.get("USE_EVENT_HUB", "True").lower() == "true"
+USE_KAFKA = os.environ.get("USE_KAFKA", "False").lower() == "true"
 
 async def process_task_in_background(request_data: Dict[str, Any], task_id: str):
     """
@@ -110,7 +112,7 @@ async def orchestrate(
     db: AsyncSession = Depends(get_db_dependency)
 ):
     """
-    Endpoint that accepts orchestration requests and sends them to Event Hub.
+    Endpoint that accepts orchestration requests and sends them to the appropriate messaging system.
     
     Args:
         request: The orchestration request
@@ -143,9 +145,21 @@ async def orchestrate(
         # Include the task_id in the request data for correlation
         request_data["task_id"] = task_id
         
-        # Send the request to the Event Hub if enabled
-        if USE_EVENT_HUB:
-            logger.info("Sending task to Event Hub")
+        # Message processing logic - prioritize Kafka if enabled
+        if USE_KAFKA:
+            logger.info("Using Kafka producer to send task")
+            try:
+                kafka_producer = KafkaEventHubProducer()
+                async with kafka_producer as producer:
+                    await producer.send_event(request_data)
+                logger.info(f"Sent task to Kafka with ID: {task_id}")
+            except Exception as e:
+                logger.error(f"Error sending to Kafka: {str(e)}")
+                # Fall back to direct processing if Kafka fails
+                logger.info("Falling back to direct processing")
+                background_tasks.add_task(process_task_in_background, request_data, task_id)
+        elif USE_EVENT_HUB:
+            logger.info("Using EventHub producer to send task")
             try:
                 event_hub_producer = EventHubProducer()
                 async with event_hub_producer as producer:
@@ -157,7 +171,7 @@ async def orchestrate(
                 logger.info("Falling back to direct processing")
                 background_tasks.add_task(process_task_in_background, request_data, task_id)
         else:
-            logger.info(f"Event Hub disabled. Processing request directly.")
+            logger.info(f"Messaging system disabled. Processing request directly.")
             # Process the request directly
             background_tasks.add_task(process_task_in_background, request_data, task_id)
         

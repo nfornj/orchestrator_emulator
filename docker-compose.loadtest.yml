@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  loadtest:
+    build:
+      context: .
+      dockerfile: Dockerfile.loadtest
+    environment:
+      - API_URL=http://orchestrator:8000/api/orchestrate
+      - TOTAL_REQUESTS=1000
+      - CONCURRENCY=100
+      - CHECK_TASKS=false
+    networks:
+      - orchestrator-network
+
+networks:
+  orchestrator-network:
+    external:
+      true # This assumes the orchestrator is running in a network with this name
+      # Change this to match your network configuration

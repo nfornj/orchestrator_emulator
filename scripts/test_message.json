@@ -1,0 +1,20 @@
+{
+  "task_name": "Kafka Test Task",
+  "task_description": "Test task sent via Kafka",
+  "payload": [
+    {
+      "revenue": {
+        "scenario_id": "550e8400-e29b-41d4-a716-446655440000",
+        "business_type_id": "550e8400-e29b-41d4-a716-446655440001"
+      },
+      "rebates": {
+        "scenario_id": "550e8400-e29b-41d4-a716-446655440000",
+        "business_type_id": "550e8400-e29b-41d4-a716-446655440001"
+      },
+      "specialty": {
+        "scenario_id": "550e8400-e29b-41d4-a716-446655440000",
+        "business_type_id": "550e8400-e29b-41d4-a716-446655440001"
+      }
+    }
+  ]
+} 

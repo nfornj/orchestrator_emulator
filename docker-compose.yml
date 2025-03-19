@@ -8,7 +8,7 @@ services:
       - "8000:8000"
     environment:
       - DEBUG=True
-      - USE_KAFKA=False
+      - USE_KAFKA=True
       - USE_HTTP=False
       - USE_EVENT_HUB=False
       - KAFKA_BOOTSTRAP_SERVERS=kafka:9092
@@ -23,8 +23,10 @@ services:
       # PDM environment variables
       - PYTHONPATH=/app:/app/__pypackages__/3.12/lib
       - PATH=/app/__pypackages__/3.12/bin:$PATH
+      - PYTHONUNBUFFERED=1
     depends_on:
       - kafka
+      - kafka-setup
       - azurite
       - mock-services
       - postgres
@@ -40,6 +42,19 @@ services:
       interval: 10s
       timeout: 5s
       retries: 3
+
+  # Kafka setup service
+  kafka-setup:
+    container_name: "kafka-setup"
+    image: confluentinc/cp-kafka:7.3.0
+    depends_on:
+      - kafka
+    volumes:
+      - ./scripts:/scripts
+    command: /scripts/setup_kafka.sh
+    networks:
+      - eh-emulator-network
+    restart: on-failure
 
   # PostgreSQL Database
   postgres:
@@ -101,6 +116,27 @@ services:
     restart: on-failure
     healthcheck:
       test: kafka-topics --bootstrap-server kafka:9092 --list || exit 1
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  # Redpanda Console - Kafka UI for real-time monitoring
+  redpanda-console:
+    container_name: "redpanda-console"
+    image: redpandadata/console:latest
+    ports:
+      - "8080:8080"
+    environment:
+      - KAFKA_BROKERS=kafka:9092
+      - REDPANDA_ADMINAPI_ENABLED=false
+      - SERVER_LISTENPORT=8080
+    depends_on:
+      - kafka
+    networks:
+      - eh-emulator-network
+    restart: on-failure
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:8080"]
       interval: 10s
       timeout: 5s
       retries: 3

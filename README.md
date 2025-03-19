@@ -394,3 +394,43 @@ The following environment variables can be set:
 - `USE_KAFKA`: Use Kafka for message transport (default: False)
 - `USE_HTTP`: Use HTTP for message transport (default: False)
 - `USE_EVENT_HUB`: Use Azure Event Hub for message transport (default: False)
+
+## Kafka Monitoring
+
+This project includes Redpanda Console, a modern UI for monitoring Kafka:
+
+### Using Redpanda Console
+
+1. Start the services:
+
+   ```bash
+   docker-compose up -d
+   ```
+
+2. Access the Redpanda Console UI at http://localhost:8080
+
+3. You'll be able to:
+   - View all Kafka topics
+   - See messages in real-time with automatic JSON formatting
+   - Monitor consumer groups and their offsets
+   - View broker configuration and metrics
+
+### Sending Test Messages
+
+You can use the provided script to send test messages to Kafka:
+
+```bash
+# Send a message from a file
+./scripts/send_test_message.sh scripts/test_message.json
+
+# Or send a direct JSON message
+./scripts/send_test_message.sh '{"task_name":"Direct Test","payload":[{"revenue":{"scenario_id":"550e8400-e29b-41d4-a716-446655440000"}}]}'
+```
+
+### Kafka Configuration
+
+The Kafka implementation is enabled by setting the `USE_KAFKA` environment variable to `True` in the docker-compose.yml file. The application uses the following Kafka settings:
+
+- **Bootstrap Servers**: `kafka:9092` (within Docker network)
+- **Topic**: `orchestrator-events`
+- **Consumer Group**: `orchestrator-consumer-group`
