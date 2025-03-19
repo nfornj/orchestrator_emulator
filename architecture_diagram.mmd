@@ -1,0 +1,19 @@
+graph TD
+    A[User] -->|HTTP Request| B[FastAPI Application]
+    B -->|Depends on| C[Database (PostgreSQL)]
+    B -->|Calls| D[Orchestrator Service]
+    D -->|Sends Requests| E[External Services]
+    E -->|Returns Response| D
+    D -->|Updates Task Status| C
+    B -->|Returns Response| A
+
+    subgraph Background Processing
+        B -->|Background Task| F[Task Tracking Service]
+        F -->|Updates Task| C
+    end
+
+    subgraph Event Hub
+        B -->|Sends to Event Hub| G[Event Hub]
+        G -->|Processes Events| H[Event Consumer]
+        H -->|Calls| D
+    end 

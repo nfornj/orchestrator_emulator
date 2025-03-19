@@ -1,0 +1,144 @@
+name: orchestrator-emulator
+services:
+  # Orchestrator Service
+  orchestrator:
+    container_name: "orchestrator"
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=True
+      - USE_KAFKA=False
+      - USE_HTTP=False
+      - USE_EVENT_HUB=False
+      - KAFKA_BOOTSTRAP_SERVERS=kafka:9092
+      - KAFKA_TOPIC=orchestrator-events
+      - EVENT_HUB_NAME=orchestrator-events
+      - STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol=http;AccountName=devstoreaccount1;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;BlobEndpoint=http://azurite:10000/devstoreaccount1;QueueEndpoint=http://azurite:10001/devstoreaccount1;TableEndpoint=http://azurite:10002/devstoreaccount1;
+      - REVENUE_SERVICE_URL=http://mock-services:8001/revenue
+      - REBATES_SERVICE_URL=http://mock-services:8002/rebates
+      - SPECIALTY_SERVICE_URL=http://mock-services:8003/specialty
+      # Database connection settings
+      - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/orchestrator
+    depends_on:
+      - kafka
+      - azurite
+      - mock-services
+      - postgres
+    volumes:
+      - ./app:/app/app
+    networks:
+      - eh-emulator-network
+    restart: on-failure
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  # PostgreSQL Database
+  postgres:
+    container_name: "postgres"
+    image: postgres:14
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=orchestrator
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - eh-emulator-network
+    restart: on-failure
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # Kafka and Zookeeper
+  zookeeper:
+    container_name: "zookeeper"
+    image: confluentinc/cp-zookeeper:7.3.0
+    ports:
+      - "2181:2181"
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    networks:
+      - eh-emulator-network
+    restart: on-failure
+    healthcheck:
+      test: echo srvr | nc zookeeper 2181 || exit 1
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  kafka:
+    container_name: "kafka"
+    image: confluentinc/cp-kafka:7.3.0
+    depends_on:
+      - zookeeper
+    ports:
+      - "9093:9092" # Map to a different host port (9093) to avoid conflicts
+      - "29092:29092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,PLAINTEXT_HOST://localhost:29092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+    networks:
+      - eh-emulator-network
+    restart: on-failure
+    healthcheck:
+      test: kafka-topics --bootstrap-server kafka:9092 --list || exit 1
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  # Azurite (Azure Storage Emulator)
+  azurite:
+    container_name: "azurite"
+    image: "mcr.microsoft.com/azure-storage/azurite:latest"
+    pull_policy: always
+    ports:
+      - "10000:10000" # Blob
+      - "10001:10001" # Queue
+      - "10002:10002" # Table
+    networks:
+      eh-emulator-network:
+        aliases:
+          - "azurite"
+    restart: on-failure
+    command: "azurite --blobHost 0.0.0.0 --blobPort 10000 --queueHost 0.0.0.0 --queuePort 10001 --tableHost 0.0.0.0 --tablePort 10002 --disableProductStyleUrl"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:10000 || exit 0"]
+      interval: 5s
+      timeout: 3s
+      retries: 3
+
+  # Mock Services (for testing)
+  mock-services:
+    container_name: "mock-services"
+    build:
+      context: ./mock-services
+      dockerfile: Dockerfile
+    ports:
+      - "8001:8001" # Revenue service
+      - "8002:8002" # Rebates service
+      - "8003:8003" # Specialty service
+    networks:
+      - eh-emulator-network
+    restart: on-failure
+
+networks:
+  eh-emulator-network:
+    name: eh-emulator-network
+    external: true
+
+volumes:
+  postgres_data:
