@@ -1,21 +1,30 @@
 {
     "UserConfig": {
         "NamespaceConfig": [
-        {
-            "Type": "EventHub",
-            "Name": "emulatorNs1",
-            "Entities": [
             {
-                "Name": "orchestrator-events",
-                "PartitionCount": "2",
-                "ConsumerGroups": [
+                "Type": "EventHub",
+                "Name": "emulatorNs1",
+                "Entities": [
+                    {
+                        "Name": "orchestrator",
+                        "PartitionCount": "2",
+                        "ConsumerGroups": [
+                            {
+                                "Name": "cg1"
+                            }
+                        ]
+                    }
                 ]
             }
-            ]
-        }
         ],
         "LoggingConfig": {
             "Type": "File"
-        }
+        },
+        "SharedAccessPolicies": [
+            {
+                "Name": "RootManageSharedAccessKey",
+                "PrimaryKey": "Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw=="
+            }
+        ]
     }
-} 
+}

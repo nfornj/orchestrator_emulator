@@ -1,0 +1,17 @@
+kafka:
+  brokers:
+    - eventhubs-emulator:9092
+  schemaRegistry:
+    enabled: false
+  sasl:
+    enabled: true
+    username: "$ConnectionString"
+    password: "Endpoint=sb://eventhubs-emulator;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;UseDevelopmentEmulator=true;"
+    mechanism: "PLAIN"
+
+connect:
+  enabled: false
+
+redpanda:
+  adminApi:
+    enabled: false 

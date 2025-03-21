@@ -1,0 +1,4483 @@
+{
+  "metadata": {
+    "timestamp": "20250321-004758",
+    "num_requests": 100,
+    "concurrency": 20,
+    "verify": false,
+    "delay": 0,
+    "total_time": 2.0058369636535645,
+    "successful": 100,
+    "failed": 0,
+    "requests_per_second": 49.85450054617269
+  },
+  "results": [
+    {
+      "index": 1,
+      "status": "success",
+      "task_id": "a395f941-10c1-4331-b2e0-f743b0f6f709",
+      "elapsed": 0.8387129306793213,
+      "payload": {
+        "task_name": "load-test-bd937530-1",
+        "task_description": "Test task #1 generated for load testing",
+        "app_id": 784,
+        "compute": [
+          {
+            "scenario_id": "revenue-bd937530-0",
+            "business_type_id": "clinic-bd937530-0",
+            "revenue": {
+              "value": 339311,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 23751,
+              "percentage": 5
+            },
+            "speciality": {
+              "type": "geriatrics",
+              "region": "region-5"
+            }
+          },
+          {
+            "scenario_id": "market-bd937530-1",
+            "business_type_id": "clinic-bd937530-1",
+            "revenue": {
+              "value": 939903,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 75192,
+              "percentage": 18
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "status": "success",
+      "task_id": "acb56b88-ea62-4b93-987b-2cc2ef6666fa",
+      "elapsed": 0.764869213104248,
+      "payload": {
+        "task_name": "load-test-799ca795-2",
+        "task_description": "Test task #2 generated for load testing",
+        "app_id": 210,
+        "compute": [
+          {
+            "scenario_id": "market-799ca795-0",
+            "business_type_id": "wholesale-799ca795-0",
+            "revenue": {
+              "value": 720144,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 86417,
+              "percentage": 9
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-3"
+            }
+          },
+          {
+            "scenario_id": "rebate-799ca795-1",
+            "business_type_id": "wholesale-799ca795-1",
+            "revenue": {
+              "value": 968358,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 193671,
+              "percentage": 13
+            },
+            "speciality": {
+              "type": "pediatrics",
+              "region": "region-1"
+            }
+          },
+          {
+            "scenario_id": "revenue-799ca795-2",
+            "business_type_id": "wholesale-799ca795-2",
+            "revenue": {
+              "value": 704622,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 133878,
+              "percentage": 20
+            },
+            "speciality": {
+              "type": "geriatrics",
+              "region": "region-4"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "status": "success",
+      "task_id": "9c711949-e2b7-4525-b6b0-0e658ff5d451",
+      "elapsed": 0.9798028469085693,
+      "payload": {
+        "task_name": "load-test-57934de9-3",
+        "task_description": "Test task #3 generated for load testing",
+        "app_id": 471,
+        "compute": [
+          {
+            "scenario_id": "rebate-57934de9-0",
+            "business_type_id": "retail-57934de9-0",
+            "revenue": {
+              "value": 682668,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 34133,
+              "percentage": 11
+            },
+            "speciality": {
+              "type": "geriatrics",
+              "region": "region-3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "status": "success",
+      "task_id": "ec23c3a9-6000-4ede-bdde-68d2e987b124",
+      "elapsed": 0.8529052734375,
+      "payload": {
+        "task_name": "load-test-89d52079-4",
+        "task_description": "Test task #4 generated for load testing",
+        "app_id": 379,
+        "compute": [
+          {
+            "scenario_id": "forecast-89d52079-0",
+            "business_type_id": "clinic-89d52079-0",
+            "revenue": {
+              "value": 223715,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 44743,
+              "percentage": 5
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-3"
+            }
+          },
+          {
+            "scenario_id": "rebate-89d52079-1",
+            "business_type_id": "retail-89d52079-1",
+            "revenue": {
+              "value": 768479,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 122956,
+              "percentage": 20
+            },
+            "speciality": {
+              "type": "geriatrics",
+              "region": "region-3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "status": "success",
+      "task_id": "3a43c7e6-0848-47e3-ada7-9be01a86adeb",
+      "elapsed": 1.0175201892852783,
+      "payload": {
+        "task_name": "load-test-f43b5c65-5",
+        "task_description": "Test task #5 generated for load testing",
+        "app_id": 368,
+        "compute": [
+          {
+            "scenario_id": "cost-f43b5c65-0",
+            "business_type_id": "wholesale-f43b5c65-0",
+            "revenue": {
+              "value": 662397,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 112607,
+              "percentage": 20
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-3"
+            }
+          },
+          {
+            "scenario_id": "pricing-f43b5c65-1",
+            "business_type_id": "clinic-f43b5c65-1",
+            "revenue": {
+              "value": 239673,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 40744,
+              "percentage": 18
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-4"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 6,
+      "status": "success",
+      "task_id": "27a454a0-8fff-428c-af2d-56d802885c24",
+      "elapsed": 0.9593212604522705,
+      "payload": {
+        "task_name": "load-test-c815836d-6",
+        "task_description": "Test task #6 generated for load testing",
+        "app_id": 668,
+        "compute": [
+          {
+            "scenario_id": "revenue-c815836d-0",
+            "business_type_id": "specialty-c815836d-0",
+            "revenue": {
+              "value": 294570,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 50076,
+              "percentage": 15
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 7,
+      "status": "success",
+      "task_id": "fb5b65d2-4531-4cdc-954d-a1b1fcb92ea9",
+      "elapsed": 0.9720380306243896,
+      "payload": {
+        "task_name": "load-test-76912251-7",
+        "task_description": "Test task #7 generated for load testing",
+        "app_id": 593,
+        "compute": [
+          {
+            "scenario_id": "revenue-76912251-0",
+            "business_type_id": "clinic-76912251-0",
+            "revenue": {
+              "value": 210457,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 16836,
+              "percentage": 20
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-2"
+            }
+          },
+          {
+            "scenario_id": "revenue-76912251-1",
+            "business_type_id": "wholesale-76912251-1",
+            "revenue": {
+              "value": 233877,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 39759,
+              "percentage": 20
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-4"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 8,
+      "status": "success",
+      "task_id": "02a1f71f-8c51-4eea-8e7c-e6aaa4d5c2b9",
+      "elapsed": 0.8930530548095703,
+      "payload": {
+        "task_name": "load-test-6118d08f-8",
+        "task_description": "Test task #8 generated for load testing",
+        "app_id": 424,
+        "compute": [
+          {
+            "scenario_id": "market-6118d08f-0",
+            "business_type_id": "clinic-6118d08f-0",
+            "revenue": {
+              "value": 540336,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 43226,
+              "percentage": 14
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-4"
+            }
+          },
+          {
+            "scenario_id": "revenue-6118d08f-1",
+            "business_type_id": "clinic-6118d08f-1",
+            "revenue": {
+              "value": 336980,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 53916,
+              "percentage": 6
+            },
+            "speciality": {
+              "type": "pediatrics",
+              "region": "region-5"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 9,
+      "status": "success",
+      "task_id": "5c9cc125-dff4-4180-b308-80c3c0e8a290",
+      "elapsed": 1.0039889812469482,
+      "payload": {
+        "task_name": "load-test-14bce1bc-9",
+        "task_description": "Test task #9 generated for load testing",
+        "app_id": 486,
+        "compute": [
+          {
+            "scenario_id": "cost-14bce1bc-0",
+            "business_type_id": "specialty-14bce1bc-0",
+            "revenue": {
+              "value": 167465,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 28469,
+              "percentage": 12
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 10,
+      "status": "success",
+      "task_id": "fa1761c7-9003-44c8-9c12-2d8f8159fe74",
+      "elapsed": 1.0351061820983887,
+      "payload": {
+        "task_name": "load-test-8d266967-10",
+        "task_description": "Test task #10 generated for load testing",
+        "app_id": 483,
+        "compute": [
+          {
+            "scenario_id": "pricing-8d266967-0",
+            "business_type_id": "wholesale-8d266967-0",
+            "revenue": {
+              "value": 867185,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 156093,
+              "percentage": 18
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-3"
+            }
+          },
+          {
+            "scenario_id": "revenue-8d266967-1",
+            "business_type_id": "distribution-8d266967-1",
+            "revenue": {
+              "value": 811331,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 40566,
+              "percentage": 11
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-2"
+            }
+          },
+          {
+            "scenario_id": "market-8d266967-2",
+            "business_type_id": "specialty-8d266967-2",
+            "revenue": {
+              "value": 631462,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 31573,
+              "percentage": 13
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 11,
+      "status": "success",
+      "task_id": "8ed3999a-ddba-4973-868f-17bdf31534ee",
+      "elapsed": 0.9507169723510742,
+      "payload": {
+        "task_name": "load-test-d9b506a4-11",
+        "task_description": "Test task #11 generated for load testing",
+        "app_id": 686,
+        "compute": [
+          {
+            "scenario_id": "cost-d9b506a4-0",
+            "business_type_id": "wholesale-d9b506a4-0",
+            "revenue": {
+              "value": 434330,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 86866,
+              "percentage": 17
+            },
+            "speciality": {
+              "type": "geriatrics",
+              "region": "region-3"
+            }
+          },
+          {
+            "scenario_id": "cost-d9b506a4-1",
+            "business_type_id": "clinic-d9b506a4-1",
+            "revenue": {
+              "value": 860047,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 172009,
+              "percentage": 8
+            },
+            "speciality": {
+              "type": "pediatrics",
+              "region": "region-1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 12,
+      "status": "success",
+      "task_id": "7ca2d974-dcb7-41ba-b320-e934c16a4e0b",
+      "elapsed": 0.9315719604492188,
+      "payload": {
+        "task_name": "load-test-95b6cd03-12",
+        "task_description": "Test task #12 generated for load testing",
+        "app_id": 426,
+        "compute": [
+          {
+            "scenario_id": "rebate-95b6cd03-0",
+            "business_type_id": "hospital-95b6cd03-0",
+            "revenue": {
+              "value": 510309,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 61237,
+              "percentage": 16
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-5"
+            }
+          },
+          {
+            "scenario_id": "cost-95b6cd03-1",
+            "business_type_id": "distribution-95b6cd03-1",
+            "revenue": {
+              "value": 717456,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 57396,
+              "percentage": 18
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-5"
+            }
+          },
+          {
+            "scenario_id": "cost-95b6cd03-2",
+            "business_type_id": "hospital-95b6cd03-2",
+            "revenue": {
+              "value": 122563,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 19610,
+              "percentage": 17
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-5"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 13,
+      "status": "success",
+      "task_id": "dab35de5-686c-4583-9465-fe913d39bb42",
+      "elapsed": 0.7828450202941895,
+      "payload": {
+        "task_name": "load-test-13897523-13",
+        "task_description": "Test task #13 generated for load testing",
+        "app_id": 452,
+        "compute": [
+          {
+            "scenario_id": "cost-13897523-0",
+            "business_type_id": "hospital-13897523-0",
+            "revenue": {
+              "value": 818538,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 163707,
+              "percentage": 5
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-2"
+            }
+          },
+          {
+            "scenario_id": "cost-13897523-1",
+            "business_type_id": "wholesale-13897523-1",
+            "revenue": {
+              "value": 205681,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 24681,
+              "percentage": 7
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-4"
+            }
+          },
+          {
+            "scenario_id": "rebate-13897523-2",
+            "business_type_id": "hospital-13897523-2",
+            "revenue": {
+              "value": 806320,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 48379,
+              "percentage": 14
+            },
+            "speciality": {
+              "type": "geriatrics",
+              "region": "region-2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 14,
+      "status": "success",
+      "task_id": "92f1e5d5-fd76-409f-98cf-11793097962b",
+      "elapsed": 0.8989770412445068,
+      "payload": {
+        "task_name": "load-test-d0490280-14",
+        "task_description": "Test task #14 generated for load testing",
+        "app_id": 177,
+        "compute": [
+          {
+            "scenario_id": "rebate-d0490280-0",
+            "business_type_id": "specialty-d0490280-0",
+            "revenue": {
+              "value": 832577,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 141538,
+              "percentage": 9
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 15,
+      "status": "success",
+      "task_id": "f2e1d7e7-ef70-473f-bb35-65762d6704e6",
+      "elapsed": 0.8653719425201416,
+      "payload": {
+        "task_name": "load-test-69af0ad0-15",
+        "task_description": "Test task #15 generated for load testing",
+        "app_id": 388,
+        "compute": [
+          {
+            "scenario_id": "forecast-69af0ad0-0",
+            "business_type_id": "hospital-69af0ad0-0",
+            "revenue": {
+              "value": 398397,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 59759,
+              "percentage": 9
+            },
+            "speciality": {
+              "type": "geriatrics",
+              "region": "region-2"
+            }
+          },
+          {
+            "scenario_id": "rebate-69af0ad0-1",
+            "business_type_id": "clinic-69af0ad0-1",
+            "revenue": {
+              "value": 472669,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 37813,
+              "percentage": 15
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-4"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 16,
+      "status": "success",
+      "task_id": "eb0a136d-ebd9-4e72-ad38-41c15c30535f",
+      "elapsed": 0.9372031688690186,
+      "payload": {
+        "task_name": "load-test-4d5d31a9-16",
+        "task_description": "Test task #16 generated for load testing",
+        "app_id": 246,
+        "compute": [
+          {
+            "scenario_id": "cost-4d5d31a9-0",
+            "business_type_id": "wholesale-4d5d31a9-0",
+            "revenue": {
+              "value": 901922,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 72153,
+              "percentage": 5
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 17,
+      "status": "success",
+      "task_id": "ba85dcd3-38e0-4c26-8ebd-a78433932122",
+      "elapsed": 0.9095971584320068,
+      "payload": {
+        "task_name": "load-test-dd3aaa9d-17",
+        "task_description": "Test task #17 generated for load testing",
+        "app_id": 173,
+        "compute": [
+          {
+            "scenario_id": "market-dd3aaa9d-0",
+            "business_type_id": "distribution-dd3aaa9d-0",
+            "revenue": {
+              "value": 811292,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 73016,
+              "percentage": 16
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 18,
+      "status": "success",
+      "task_id": "92d7054a-011b-42c9-b190-dbca9acba9ae",
+      "elapsed": 0.8166868686676025,
+      "payload": {
+        "task_name": "load-test-0ded93a5-18",
+        "task_description": "Test task #18 generated for load testing",
+        "app_id": 368,
+        "compute": [
+          {
+            "scenario_id": "revenue-0ded93a5-0",
+            "business_type_id": "clinic-0ded93a5-0",
+            "revenue": {
+              "value": 504016,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 45361,
+              "percentage": 18
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-5"
+            }
+          },
+          {
+            "scenario_id": "forecast-0ded93a5-1",
+            "business_type_id": "specialty-0ded93a5-1",
+            "revenue": {
+              "value": 331187,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 36430,
+              "percentage": 11
+            },
+            "speciality": {
+              "type": "geriatrics",
+              "region": "region-2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 19,
+      "status": "success",
+      "task_id": "bc2b16b0-b5d7-4e3b-b978-aa73fcdc6213",
+      "elapsed": 0.8759543895721436,
+      "payload": {
+        "task_name": "load-test-0132f4d1-19",
+        "task_description": "Test task #19 generated for load testing",
+        "app_id": 286,
+        "compute": [
+          {
+            "scenario_id": "forecast-0132f4d1-0",
+            "business_type_id": "specialty-0132f4d1-0",
+            "revenue": {
+              "value": 323202,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 16160,
+              "percentage": 12
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-3"
+            }
+          },
+          {
+            "scenario_id": "market-0132f4d1-1",
+            "business_type_id": "hospital-0132f4d1-1",
+            "revenue": {
+              "value": 890092,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 106811,
+              "percentage": 17
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 20,
+      "status": "success",
+      "task_id": "dd369f4e-dbcd-43ed-b9f1-8cebbb536a75",
+      "elapsed": 0.9020941257476807,
+      "payload": {
+        "task_name": "load-test-00acffe2-20",
+        "task_description": "Test task #20 generated for load testing",
+        "app_id": 690,
+        "compute": [
+          {
+            "scenario_id": "rebate-00acffe2-0",
+            "business_type_id": "retail-00acffe2-0",
+            "revenue": {
+              "value": 209640,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 37735,
+              "percentage": 7
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 21,
+      "status": "success",
+      "task_id": "03f2d285-d120-4f38-879a-4d0487ed6b0b",
+      "elapsed": 0.29982471466064453,
+      "payload": {
+        "task_name": "load-test-63b13317-21",
+        "task_description": "Test task #21 generated for load testing",
+        "app_id": 955,
+        "compute": [
+          {
+            "scenario_id": "forecast-63b13317-0",
+            "business_type_id": "specialty-63b13317-0",
+            "revenue": {
+              "value": 385316,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 26972,
+              "percentage": 7
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-3"
+            }
+          },
+          {
+            "scenario_id": "market-63b13317-1",
+            "business_type_id": "hospital-63b13317-1",
+            "revenue": {
+              "value": 833388,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 150009,
+              "percentage": 14
+            },
+            "speciality": {
+              "type": "pediatrics",
+              "region": "region-3"
+            }
+          },
+          {
+            "scenario_id": "market-63b13317-2",
+            "business_type_id": "distribution-63b13317-2",
+            "revenue": {
+              "value": 876098,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 113892,
+              "percentage": 9
+            },
+            "speciality": {
+              "type": "pediatrics",
+              "region": "region-4"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 22,
+      "status": "success",
+      "task_id": "46fdc2af-bde8-438e-bbbd-09a97b11fd2c",
+      "elapsed": 0.30600810050964355,
+      "payload": {
+        "task_name": "load-test-c1063d69-22",
+        "task_description": "Test task #22 generated for load testing",
+        "app_id": 966,
+        "compute": [
+          {
+            "scenario_id": "rebate-c1063d69-0",
+            "business_type_id": "clinic-c1063d69-0",
+            "revenue": {
+              "value": 422057,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 25323,
+              "percentage": 17
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-4"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 23,
+      "status": "success",
+      "task_id": "c54c9539-f266-4bed-a765-5e5a93283e10",
+      "elapsed": 0.2635469436645508,
+      "payload": {
+        "task_name": "load-test-a66809ee-23",
+        "task_description": "Test task #23 generated for load testing",
+        "app_id": 977,
+        "compute": [
+          {
+            "scenario_id": "revenue-a66809ee-0",
+            "business_type_id": "specialty-a66809ee-0",
+            "revenue": {
+              "value": 773697,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 92843,
+              "percentage": 5
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 24,
+      "status": "success",
+      "task_id": "6ae6bf89-eabf-44d6-ad9f-fb73e4df59d6",
+      "elapsed": 0.23939085006713867,
+      "payload": {
+        "task_name": "load-test-45378cb7-24",
+        "task_description": "Test task #24 generated for load testing",
+        "app_id": 697,
+        "compute": [
+          {
+            "scenario_id": "pricing-45378cb7-0",
+            "business_type_id": "clinic-45378cb7-0",
+            "revenue": {
+              "value": 800706,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 120105,
+              "percentage": 6
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-2"
+            }
+          },
+          {
+            "scenario_id": "rebate-45378cb7-1",
+            "business_type_id": "retail-45378cb7-1",
+            "revenue": {
+              "value": 834923,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 91841,
+              "percentage": 18
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-5"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 25,
+      "status": "success",
+      "task_id": "6c575cbd-d794-4d3b-85f4-2df4ae41fb47",
+      "elapsed": 0.2873878479003906,
+      "payload": {
+        "task_name": "load-test-4a95378e-25",
+        "task_description": "Test task #25 generated for load testing",
+        "app_id": 934,
+        "compute": [
+          {
+            "scenario_id": "rebate-4a95378e-0",
+            "business_type_id": "specialty-4a95378e-0",
+            "revenue": {
+              "value": 770246,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 123239,
+              "percentage": 15
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-4"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 26,
+      "status": "success",
+      "task_id": "87afe3cc-d50b-4460-9b10-196309893e25",
+      "elapsed": 0.2571420669555664,
+      "payload": {
+        "task_name": "load-test-45f32d1d-26",
+        "task_description": "Test task #26 generated for load testing",
+        "app_id": 515,
+        "compute": [
+          {
+            "scenario_id": "market-45f32d1d-0",
+            "business_type_id": "retail-45f32d1d-0",
+            "revenue": {
+              "value": 145666,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 23306,
+              "percentage": 19
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-3"
+            }
+          },
+          {
+            "scenario_id": "cost-45f32d1d-1",
+            "business_type_id": "hospital-45f32d1d-1",
+            "revenue": {
+              "value": 874081,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 113630,
+              "percentage": 5
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-5"
+            }
+          },
+          {
+            "scenario_id": "forecast-45f32d1d-2",
+            "business_type_id": "distribution-45f32d1d-2",
+            "revenue": {
+              "value": 967352,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 174123,
+              "percentage": 7
+            },
+            "speciality": {
+              "type": "pediatrics",
+              "region": "region-2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 27,
+      "status": "success",
+      "task_id": "7b46daf9-eed4-4cee-80bb-f23115c4cb61",
+      "elapsed": 0.2788093090057373,
+      "payload": {
+        "task_name": "load-test-88238b96-27",
+        "task_description": "Test task #27 generated for load testing",
+        "app_id": 460,
+        "compute": [
+          {
+            "scenario_id": "forecast-88238b96-0",
+            "business_type_id": "distribution-88238b96-0",
+            "revenue": {
+              "value": 423523,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 38117,
+              "percentage": 11
+            },
+            "speciality": {
+              "type": "geriatrics",
+              "region": "region-2"
+            }
+          },
+          {
+            "scenario_id": "rebate-88238b96-1",
+            "business_type_id": "specialty-88238b96-1",
+            "revenue": {
+              "value": 458170,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 73307,
+              "percentage": 20
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-4"
+            }
+          },
+          {
+            "scenario_id": "market-88238b96-2",
+            "business_type_id": "distribution-88238b96-2",
+            "revenue": {
+              "value": 199356,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 27909,
+              "percentage": 6
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 28,
+      "status": "success",
+      "task_id": "b696e0bb-4790-45e8-a43e-08e2315779c2",
+      "elapsed": 0.2991931438446045,
+      "payload": {
+        "task_name": "load-test-18e9b539-28",
+        "task_description": "Test task #28 generated for load testing",
+        "app_id": 646,
+        "compute": [
+          {
+            "scenario_id": "cost-18e9b539-0",
+            "business_type_id": "hospital-18e9b539-0",
+            "revenue": {
+              "value": 688757,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 103313,
+              "percentage": 10
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-3"
+            }
+          },
+          {
+            "scenario_id": "forecast-18e9b539-1",
+            "business_type_id": "clinic-18e9b539-1",
+            "revenue": {
+              "value": 158688,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 30150,
+              "percentage": 19
+            },
+            "speciality": {
+              "type": "geriatrics",
+              "region": "region-5"
+            }
+          },
+          {
+            "scenario_id": "rebate-18e9b539-2",
+            "business_type_id": "specialty-18e9b539-2",
+            "revenue": {
+              "value": 519136,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 46722,
+              "percentage": 13
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 29,
+      "status": "success",
+      "task_id": "b822d5b3-47de-40bb-946f-df48cc886dad",
+      "elapsed": 0.2748868465423584,
+      "payload": {
+        "task_name": "load-test-d78289b5-29",
+        "task_description": "Test task #29 generated for load testing",
+        "app_id": 843,
+        "compute": [
+          {
+            "scenario_id": "forecast-d78289b5-0",
+            "business_type_id": "distribution-d78289b5-0",
+            "revenue": {
+              "value": 714759,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 121509,
+              "percentage": 20
+            },
+            "speciality": {
+              "type": "pediatrics",
+              "region": "region-1"
+            }
+          },
+          {
+            "scenario_id": "revenue-d78289b5-1",
+            "business_type_id": "wholesale-d78289b5-1",
+            "revenue": {
+              "value": 891515,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 142642,
+              "percentage": 5
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-4"
+            }
+          },
+          {
+            "scenario_id": "cost-d78289b5-2",
+            "business_type_id": "distribution-d78289b5-2",
+            "revenue": {
+              "value": 155353,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 20195,
+              "percentage": 7
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-5"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 30,
+      "status": "success",
+      "task_id": "f285192d-ed83-44a6-bec6-9424f84e85b2",
+      "elapsed": 0.2922019958496094,
+      "payload": {
+        "task_name": "load-test-0d12cafa-30",
+        "task_description": "Test task #30 generated for load testing",
+        "app_id": 138,
+        "compute": [
+          {
+            "scenario_id": "cost-0d12cafa-0",
+            "business_type_id": "retail-0d12cafa-0",
+            "revenue": {
+              "value": 377085,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 64104,
+              "percentage": 17
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 31,
+      "status": "success",
+      "task_id": "6a494316-4e84-4ba4-be3f-05009dd67a4e",
+      "elapsed": 0.3041348457336426,
+      "payload": {
+        "task_name": "load-test-9ba4f929-31",
+        "task_description": "Test task #31 generated for load testing",
+        "app_id": 287,
+        "compute": [
+          {
+            "scenario_id": "cost-9ba4f929-0",
+            "business_type_id": "specialty-9ba4f929-0",
+            "revenue": {
+              "value": 108150,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 16222,
+              "percentage": 6
+            },
+            "speciality": {
+              "type": "pediatrics",
+              "region": "region-5"
+            }
+          },
+          {
+            "scenario_id": "rebate-9ba4f929-1",
+            "business_type_id": "wholesale-9ba4f929-1",
+            "revenue": {
+              "value": 820263,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 139444,
+              "percentage": 13
+            },
+            "speciality": {
+              "type": "geriatrics",
+              "region": "region-5"
+            }
+          },
+          {
+            "scenario_id": "cost-9ba4f929-2",
+            "business_type_id": "clinic-9ba4f929-2",
+            "revenue": {
+              "value": 345559,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 24189,
+              "percentage": 10
+            },
+            "speciality": {
+              "type": "pediatrics",
+              "region": "region-3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 32,
+      "status": "success",
+      "task_id": "2a409ce4-cce5-41ce-aa6c-07ab1f706c97",
+      "elapsed": 0.3077659606933594,
+      "payload": {
+        "task_name": "load-test-fe781723-32",
+        "task_description": "Test task #32 generated for load testing",
+        "app_id": 969,
+        "compute": [
+          {
+            "scenario_id": "cost-fe781723-0",
+            "business_type_id": "specialty-fe781723-0",
+            "revenue": {
+              "value": 177974,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 26696,
+              "percentage": 8
+            },
+            "speciality": {
+              "type": "geriatrics",
+              "region": "region-2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 33,
+      "status": "success",
+      "task_id": "72db3c46-a602-46f2-ba71-b9cc72199b7f",
+      "elapsed": 0.2934589385986328,
+      "payload": {
+        "task_name": "load-test-ccc9690e-33",
+        "task_description": "Test task #33 generated for load testing",
+        "app_id": 529,
+        "compute": [
+          {
+            "scenario_id": "market-ccc9690e-0",
+            "business_type_id": "hospital-ccc9690e-0",
+            "revenue": {
+              "value": 92259,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 4612,
+              "percentage": 8
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-3"
+            }
+          },
+          {
+            "scenario_id": "revenue-ccc9690e-1",
+            "business_type_id": "wholesale-ccc9690e-1",
+            "revenue": {
+              "value": 67006,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 10050,
+              "percentage": 16
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-4"
+            }
+          },
+          {
+            "scenario_id": "cost-ccc9690e-2",
+            "business_type_id": "hospital-ccc9690e-2",
+            "revenue": {
+              "value": 433278,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 73657,
+              "percentage": 14
+            },
+            "speciality": {
+              "type": "geriatrics",
+              "region": "region-3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 34,
+      "status": "success",
+      "task_id": "2a8f961a-30c7-4aaf-aa85-26faad00b9a8",
+      "elapsed": 0.30463218688964844,
+      "payload": {
+        "task_name": "load-test-516064c3-34",
+        "task_description": "Test task #34 generated for load testing",
+        "app_id": 841,
+        "compute": [
+          {
+            "scenario_id": "rebate-516064c3-0",
+            "business_type_id": "retail-516064c3-0",
+            "revenue": {
+              "value": 514787,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 25739,
+              "percentage": 16
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-5"
+            }
+          },
+          {
+            "scenario_id": "cost-516064c3-1",
+            "business_type_id": "hospital-516064c3-1",
+            "revenue": {
+              "value": 260244,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 52048,
+              "percentage": 6
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-2"
+            }
+          },
+          {
+            "scenario_id": "market-516064c3-2",
+            "business_type_id": "wholesale-516064c3-2",
+            "revenue": {
+              "value": 869970,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 173994,
+              "percentage": 20
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 35,
+      "status": "success",
+      "task_id": "44ebc7c9-3975-4148-b849-99e5ca591bb3",
+      "elapsed": 0.30271482467651367,
+      "payload": {
+        "task_name": "load-test-3d163339-35",
+        "task_description": "Test task #35 generated for load testing",
+        "app_id": 741,
+        "compute": [
+          {
+            "scenario_id": "revenue-3d163339-0",
+            "business_type_id": "specialty-3d163339-0",
+            "revenue": {
+              "value": 821367,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 164273,
+              "percentage": 18
+            },
+            "speciality": {
+              "type": "geriatrics",
+              "region": "region-5"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 36,
+      "status": "success",
+      "task_id": "10da7616-97d2-41cd-98e5-d6528d027fa4",
+      "elapsed": 0.2952759265899658,
+      "payload": {
+        "task_name": "load-test-adb750e0-36",
+        "task_description": "Test task #36 generated for load testing",
+        "app_id": 192,
+        "compute": [
+          {
+            "scenario_id": "rebate-adb750e0-0",
+            "business_type_id": "clinic-adb750e0-0",
+            "revenue": {
+              "value": 774707,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 108458,
+              "percentage": 7
+            },
+            "speciality": {
+              "type": "pediatrics",
+              "region": "region-5"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 37,
+      "status": "success",
+      "task_id": "ce37c624-3942-4913-8bf2-37a1ced22da8",
+      "elapsed": 0.29340696334838867,
+      "payload": {
+        "task_name": "load-test-52f7a728-37",
+        "task_description": "Test task #37 generated for load testing",
+        "app_id": 995,
+        "compute": [
+          {
+            "scenario_id": "cost-52f7a728-0",
+            "business_type_id": "wholesale-52f7a728-0",
+            "revenue": {
+              "value": 242132,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 48426,
+              "percentage": 8
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-4"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 38,
+      "status": "success",
+      "task_id": "221e6876-0b43-415a-b437-8c85e171bc83",
+      "elapsed": 0.2853851318359375,
+      "payload": {
+        "task_name": "load-test-4cd3abee-38",
+        "task_description": "Test task #38 generated for load testing",
+        "app_id": 267,
+        "compute": [
+          {
+            "scenario_id": "revenue-4cd3abee-0",
+            "business_type_id": "wholesale-4cd3abee-0",
+            "revenue": {
+              "value": 784596,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 47075,
+              "percentage": 8
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-5"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 39,
+      "status": "success",
+      "task_id": "1cbf3f14-1fdc-430c-8216-21e750bdb57f",
+      "elapsed": 0.2664330005645752,
+      "payload": {
+        "task_name": "load-test-5c13863d-39",
+        "task_description": "Test task #39 generated for load testing",
+        "app_id": 349,
+        "compute": [
+          {
+            "scenario_id": "pricing-5c13863d-0",
+            "business_type_id": "distribution-5c13863d-0",
+            "revenue": {
+              "value": 759449,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 37972,
+              "percentage": 7
+            },
+            "speciality": {
+              "type": "geriatrics",
+              "region": "region-2"
+            }
+          },
+          {
+            "scenario_id": "forecast-5c13863d-1",
+            "business_type_id": "clinic-5c13863d-1",
+            "revenue": {
+              "value": 753655,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 52755,
+              "percentage": 20
+            },
+            "speciality": {
+              "type": "geriatrics",
+              "region": "region-5"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 40,
+      "status": "success",
+      "task_id": "aeed78e6-bbb4-4640-88b6-8bf473b8993c",
+      "elapsed": 0.45608091354370117,
+      "payload": {
+        "task_name": "load-test-eeb4f712-40",
+        "task_description": "Test task #40 generated for load testing",
+        "app_id": 852,
+        "compute": [
+          {
+            "scenario_id": "pricing-eeb4f712-0",
+            "business_type_id": "retail-eeb4f712-0",
+            "revenue": {
+              "value": 115431,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 5771,
+              "percentage": 16
+            },
+            "speciality": {
+              "type": "geriatrics",
+              "region": "region-3"
+            }
+          },
+          {
+            "scenario_id": "cost-eeb4f712-1",
+            "business_type_id": "hospital-eeb4f712-1",
+            "revenue": {
+              "value": 702033,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 91264,
+              "percentage": 15
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-2"
+            }
+          },
+          {
+            "scenario_id": "forecast-eeb4f712-2",
+            "business_type_id": "distribution-eeb4f712-2",
+            "revenue": {
+              "value": 659649,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 52771,
+              "percentage": 17
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 41,
+      "status": "success",
+      "task_id": "e8daf59e-7c01-4771-92f6-08a3e30a5c09",
+      "elapsed": 0.2595338821411133,
+      "payload": {
+        "task_name": "load-test-cb6f9970-41",
+        "task_description": "Test task #41 generated for load testing",
+        "app_id": 285,
+        "compute": [
+          {
+            "scenario_id": "market-cb6f9970-0",
+            "business_type_id": "hospital-cb6f9970-0",
+            "revenue": {
+              "value": 814195,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 81419,
+              "percentage": 7
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-4"
+            }
+          },
+          {
+            "scenario_id": "pricing-cb6f9970-1",
+            "business_type_id": "clinic-cb6f9970-1",
+            "revenue": {
+              "value": 452567,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 67885,
+              "percentage": 9
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-4"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 42,
+      "status": "success",
+      "task_id": "fb007252-b262-45d4-aea4-50372def1c74",
+      "elapsed": 0.29880499839782715,
+      "payload": {
+        "task_name": "load-test-f00f2778-42",
+        "task_description": "Test task #42 generated for load testing",
+        "app_id": 921,
+        "compute": [
+          {
+            "scenario_id": "cost-f00f2778-0",
+            "business_type_id": "clinic-f00f2778-0",
+            "revenue": {
+              "value": 856332,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 94196,
+              "percentage": 6
+            },
+            "speciality": {
+              "type": "geriatrics",
+              "region": "region-5"
+            }
+          },
+          {
+            "scenario_id": "cost-f00f2778-1",
+            "business_type_id": "distribution-f00f2778-1",
+            "revenue": {
+              "value": 821640,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 82164,
+              "percentage": 9
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 43,
+      "status": "success",
+      "task_id": "235e54e7-5b92-48eb-b57e-4b1c21fff3d8",
+      "elapsed": 0.22991299629211426,
+      "payload": {
+        "task_name": "load-test-c2b05269-43",
+        "task_description": "Test task #43 generated for load testing",
+        "app_id": 883,
+        "compute": [
+          {
+            "scenario_id": "pricing-c2b05269-0",
+            "business_type_id": "hospital-c2b05269-0",
+            "revenue": {
+              "value": 513479,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 92426,
+              "percentage": 14
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-4"
+            }
+          },
+          {
+            "scenario_id": "cost-c2b05269-1",
+            "business_type_id": "specialty-c2b05269-1",
+            "revenue": {
+              "value": 619724,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 68169,
+              "percentage": 5
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-5"
+            }
+          },
+          {
+            "scenario_id": "pricing-c2b05269-2",
+            "business_type_id": "clinic-c2b05269-2",
+            "revenue": {
+              "value": 88401,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 8840,
+              "percentage": 9
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-5"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 44,
+      "status": "success",
+      "task_id": "3bd3c682-97d3-48f2-8c36-ff40dca385fc",
+      "elapsed": 0.2758350372314453,
+      "payload": {
+        "task_name": "load-test-8c679205-44",
+        "task_description": "Test task #44 generated for load testing",
+        "app_id": 960,
+        "compute": [
+          {
+            "scenario_id": "forecast-8c679205-0",
+            "business_type_id": "clinic-8c679205-0",
+            "revenue": {
+              "value": 544654,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 65358,
+              "percentage": 9
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 45,
+      "status": "success",
+      "task_id": "eb7c6021-c74a-47f3-bd31-f67b71b3319e",
+      "elapsed": 0.23593711853027344,
+      "payload": {
+        "task_name": "load-test-27ab3ad4-45",
+        "task_description": "Test task #45 generated for load testing",
+        "app_id": 342,
+        "compute": [
+          {
+            "scenario_id": "rebate-27ab3ad4-0",
+            "business_type_id": "distribution-27ab3ad4-0",
+            "revenue": {
+              "value": 498765,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 94765,
+              "percentage": 9
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-2"
+            }
+          },
+          {
+            "scenario_id": "revenue-27ab3ad4-1",
+            "business_type_id": "specialty-27ab3ad4-1",
+            "revenue": {
+              "value": 985891,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 69012,
+              "percentage": 16
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 46,
+      "status": "success",
+      "task_id": "9217a41a-d40a-43e6-8d92-eb7ff556689c",
+      "elapsed": 0.19437408447265625,
+      "payload": {
+        "task_name": "load-test-9a511c6a-46",
+        "task_description": "Test task #46 generated for load testing",
+        "app_id": 884,
+        "compute": [
+          {
+            "scenario_id": "pricing-9a511c6a-0",
+            "business_type_id": "clinic-9a511c6a-0",
+            "revenue": {
+              "value": 852323,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 119325,
+              "percentage": 8
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-3"
+            }
+          },
+          {
+            "scenario_id": "cost-9a511c6a-1",
+            "business_type_id": "hospital-9a511c6a-1",
+            "revenue": {
+              "value": 57032,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 7414,
+              "percentage": 9
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 47,
+      "status": "success",
+      "task_id": "740638b7-2baa-4aac-a401-f63aca4b8988",
+      "elapsed": 0.18649983406066895,
+      "payload": {
+        "task_name": "load-test-a905511c-47",
+        "task_description": "Test task #47 generated for load testing",
+        "app_id": 502,
+        "compute": [
+          {
+            "scenario_id": "cost-a905511c-0",
+            "business_type_id": "wholesale-a905511c-0",
+            "revenue": {
+              "value": 431325,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 73325,
+              "percentage": 16
+            },
+            "speciality": {
+              "type": "geriatrics",
+              "region": "region-1"
+            }
+          },
+          {
+            "scenario_id": "market-a905511c-1",
+            "business_type_id": "hospital-a905511c-1",
+            "revenue": {
+              "value": 253180,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 40508,
+              "percentage": 7
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 48,
+      "status": "success",
+      "task_id": "b40a4ef4-5d86-472b-8350-89290e725e42",
+      "elapsed": 0.2291557788848877,
+      "payload": {
+        "task_name": "load-test-f835956d-48",
+        "task_description": "Test task #48 generated for load testing",
+        "app_id": 105,
+        "compute": [
+          {
+            "scenario_id": "forecast-f835956d-0",
+            "business_type_id": "distribution-f835956d-0",
+            "revenue": {
+              "value": 666179,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 133235,
+              "percentage": 17
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-5"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 49,
+      "status": "success",
+      "task_id": "adc7bbdd-f37b-4f29-844b-81d1cdfcce71",
+      "elapsed": 0.1937401294708252,
+      "payload": {
+        "task_name": "load-test-25fb1412-49",
+        "task_description": "Test task #49 generated for load testing",
+        "app_id": 566,
+        "compute": [
+          {
+            "scenario_id": "pricing-25fb1412-0",
+            "business_type_id": "hospital-25fb1412-0",
+            "revenue": {
+              "value": 844567,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 118239,
+              "percentage": 9
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-1"
+            }
+          },
+          {
+            "scenario_id": "market-25fb1412-1",
+            "business_type_id": "specialty-25fb1412-1",
+            "revenue": {
+              "value": 839004,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 100680,
+              "percentage": 5
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-5"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 50,
+      "status": "success",
+      "task_id": "639e8873-b87a-4111-b5a0-8c6f685d41bb",
+      "elapsed": 0.19909977912902832,
+      "payload": {
+        "task_name": "load-test-5f8a8196-50",
+        "task_description": "Test task #50 generated for load testing",
+        "app_id": 881,
+        "compute": [
+          {
+            "scenario_id": "rebate-5f8a8196-0",
+            "business_type_id": "clinic-5f8a8196-0",
+            "revenue": {
+              "value": 156178,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 15617,
+              "percentage": 8
+            },
+            "speciality": {
+              "type": "pediatrics",
+              "region": "region-5"
+            }
+          },
+          {
+            "scenario_id": "cost-5f8a8196-1",
+            "business_type_id": "wholesale-5f8a8196-1",
+            "revenue": {
+              "value": 53514,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 6956,
+              "percentage": 6
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-5"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 51,
+      "status": "success",
+      "task_id": "cc7e9977-5b99-4813-8bb7-ae5d24810760",
+      "elapsed": 0.20523500442504883,
+      "payload": {
+        "task_name": "load-test-374cd80d-51",
+        "task_description": "Test task #51 generated for load testing",
+        "app_id": 492,
+        "compute": [
+          {
+            "scenario_id": "pricing-374cd80d-0",
+            "business_type_id": "hospital-374cd80d-0",
+            "revenue": {
+              "value": 257523,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 20601,
+              "percentage": 7
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-4"
+            }
+          },
+          {
+            "scenario_id": "pricing-374cd80d-1",
+            "business_type_id": "hospital-374cd80d-1",
+            "revenue": {
+              "value": 100943,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 6056,
+              "percentage": 6
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 52,
+      "status": "success",
+      "task_id": "690a62e3-821c-4490-b81f-4f9fb360a5e7",
+      "elapsed": 0.17768383026123047,
+      "payload": {
+        "task_name": "load-test-3630e5e8-52",
+        "task_description": "Test task #52 generated for load testing",
+        "app_id": 228,
+        "compute": [
+          {
+            "scenario_id": "revenue-3630e5e8-0",
+            "business_type_id": "clinic-3630e5e8-0",
+            "revenue": {
+              "value": 490969,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 58916,
+              "percentage": 15
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 53,
+      "status": "success",
+      "task_id": "95f9385c-45a7-4464-95a1-135fe854c71d",
+      "elapsed": 0.1932690143585205,
+      "payload": {
+        "task_name": "load-test-01d43f53-53",
+        "task_description": "Test task #53 generated for load testing",
+        "app_id": 464,
+        "compute": [
+          {
+            "scenario_id": "pricing-01d43f53-0",
+            "business_type_id": "hospital-01d43f53-0",
+            "revenue": {
+              "value": 543119,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 54311,
+              "percentage": 15
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-3"
+            }
+          },
+          {
+            "scenario_id": "cost-01d43f53-1",
+            "business_type_id": "retail-01d43f53-1",
+            "revenue": {
+              "value": 168999,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 11829,
+              "percentage": 5
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 54,
+      "status": "success",
+      "task_id": "8019cc88-823c-4eee-95cd-e84db17f1da0",
+      "elapsed": 0.18846607208251953,
+      "payload": {
+        "task_name": "load-test-a0bc85af-54",
+        "task_description": "Test task #54 generated for load testing",
+        "app_id": 210,
+        "compute": [
+          {
+            "scenario_id": "cost-a0bc85af-0",
+            "business_type_id": "clinic-a0bc85af-0",
+            "revenue": {
+              "value": 29937,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 5688,
+              "percentage": 16
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-4"
+            }
+          },
+          {
+            "scenario_id": "forecast-a0bc85af-1",
+            "business_type_id": "specialty-a0bc85af-1",
+            "revenue": {
+              "value": 719379,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 136682,
+              "percentage": 19
+            },
+            "speciality": {
+              "type": "pediatrics",
+              "region": "region-2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 55,
+      "status": "success",
+      "task_id": "36f31221-c953-4bca-9edb-ed6b9999aaf0",
+      "elapsed": 0.19417905807495117,
+      "payload": {
+        "task_name": "load-test-004308f7-55",
+        "task_description": "Test task #55 generated for load testing",
+        "app_id": 324,
+        "compute": [
+          {
+            "scenario_id": "market-004308f7-0",
+            "business_type_id": "specialty-004308f7-0",
+            "revenue": {
+              "value": 142566,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 11405,
+              "percentage": 20
+            },
+            "speciality": {
+              "type": "pediatrics",
+              "region": "region-2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 56,
+      "status": "success",
+      "task_id": "623c064b-3925-4ebf-8cda-d241817e092a",
+      "elapsed": 0.20578289031982422,
+      "payload": {
+        "task_name": "load-test-abcfef96-56",
+        "task_description": "Test task #56 generated for load testing",
+        "app_id": 323,
+        "compute": [
+          {
+            "scenario_id": "rebate-abcfef96-0",
+            "business_type_id": "retail-abcfef96-0",
+            "revenue": {
+              "value": 593441,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 59344,
+              "percentage": 13
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-2"
+            }
+          },
+          {
+            "scenario_id": "rebate-abcfef96-1",
+            "business_type_id": "wholesale-abcfef96-1",
+            "revenue": {
+              "value": 68861,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 3443,
+              "percentage": 6
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-5"
+            }
+          },
+          {
+            "scenario_id": "rebate-abcfef96-2",
+            "business_type_id": "hospital-abcfef96-2",
+            "revenue": {
+              "value": 991758,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 89258,
+              "percentage": 17
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-5"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 57,
+      "status": "success",
+      "task_id": "b756c72f-994e-4277-b735-9205c2739247",
+      "elapsed": 0.24189162254333496,
+      "payload": {
+        "task_name": "load-test-fe7654fd-57",
+        "task_description": "Test task #57 generated for load testing",
+        "app_id": 131,
+        "compute": [
+          {
+            "scenario_id": "revenue-fe7654fd-0",
+            "business_type_id": "hospital-fe7654fd-0",
+            "revenue": {
+              "value": 546969,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 103924,
+              "percentage": 15
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 58,
+      "status": "success",
+      "task_id": "032d7716-6cf7-4a0a-aa34-6f43d03dae4e",
+      "elapsed": 0.22491002082824707,
+      "payload": {
+        "task_name": "load-test-8ece8e76-58",
+        "task_description": "Test task #58 generated for load testing",
+        "app_id": 893,
+        "compute": [
+          {
+            "scenario_id": "pricing-8ece8e76-0",
+            "business_type_id": "distribution-8ece8e76-0",
+            "revenue": {
+              "value": 171729,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 30911,
+              "percentage": 7
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-5"
+            }
+          },
+          {
+            "scenario_id": "market-8ece8e76-1",
+            "business_type_id": "distribution-8ece8e76-1",
+            "revenue": {
+              "value": 167818,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 15103,
+              "percentage": 12
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-3"
+            }
+          },
+          {
+            "scenario_id": "pricing-8ece8e76-2",
+            "business_type_id": "hospital-8ece8e76-2",
+            "revenue": {
+              "value": 821367,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 156059,
+              "percentage": 14
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 59,
+      "status": "success",
+      "task_id": "e25b3d0b-00cd-47d0-9399-50d33172c35f",
+      "elapsed": 0.2481677532196045,
+      "payload": {
+        "task_name": "load-test-4b5fd6e6-59",
+        "task_description": "Test task #59 generated for load testing",
+        "app_id": 408,
+        "compute": [
+          {
+            "scenario_id": "cost-4b5fd6e6-0",
+            "business_type_id": "wholesale-4b5fd6e6-0",
+            "revenue": {
+              "value": 215557,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 23711,
+              "percentage": 19
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-5"
+            }
+          },
+          {
+            "scenario_id": "pricing-4b5fd6e6-1",
+            "business_type_id": "specialty-4b5fd6e6-1",
+            "revenue": {
+              "value": 818678,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 106428,
+              "percentage": 16
+            },
+            "speciality": {
+              "type": "geriatrics",
+              "region": "region-1"
+            }
+          },
+          {
+            "scenario_id": "cost-4b5fd6e6-2",
+            "business_type_id": "distribution-4b5fd6e6-2",
+            "revenue": {
+              "value": 569029,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 96734,
+              "percentage": 8
+            },
+            "speciality": {
+              "type": "pediatrics",
+              "region": "region-5"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 60,
+      "status": "success",
+      "task_id": "5b9bea64-f5af-4fe6-a099-b4edeb9cae5e",
+      "elapsed": 0.2330799102783203,
+      "payload": {
+        "task_name": "load-test-6cd279e1-60",
+        "task_description": "Test task #60 generated for load testing",
+        "app_id": 537,
+        "compute": [
+          {
+            "scenario_id": "pricing-6cd279e1-0",
+            "business_type_id": "distribution-6cd279e1-0",
+            "revenue": {
+              "value": 888457,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 124383,
+              "percentage": 20
+            },
+            "speciality": {
+              "type": "geriatrics",
+              "region": "region-2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 61,
+      "status": "success",
+      "task_id": "37b80c8b-fd59-44d4-8308-8775a8270447",
+      "elapsed": 0.2492690086364746,
+      "payload": {
+        "task_name": "load-test-a1d22b66-61",
+        "task_description": "Test task #61 generated for load testing",
+        "app_id": 925,
+        "compute": [
+          {
+            "scenario_id": "revenue-a1d22b66-0",
+            "business_type_id": "clinic-a1d22b66-0",
+            "revenue": {
+              "value": 102764,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 18497,
+              "percentage": 8
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-1"
+            }
+          },
+          {
+            "scenario_id": "cost-a1d22b66-1",
+            "business_type_id": "wholesale-a1d22b66-1",
+            "revenue": {
+              "value": 276887,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 52608,
+              "percentage": 16
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-4"
+            }
+          },
+          {
+            "scenario_id": "market-a1d22b66-2",
+            "business_type_id": "specialty-a1d22b66-2",
+            "revenue": {
+              "value": 171309,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 11991,
+              "percentage": 6
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 62,
+      "status": "success",
+      "task_id": "e60e364f-5561-4e93-afd4-6f2eb4fbdd34",
+      "elapsed": 0.25586891174316406,
+      "payload": {
+        "task_name": "load-test-d9de3ac5-62",
+        "task_description": "Test task #62 generated for load testing",
+        "app_id": 636,
+        "compute": [
+          {
+            "scenario_id": "market-d9de3ac5-0",
+            "business_type_id": "wholesale-d9de3ac5-0",
+            "revenue": {
+              "value": 450644,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 90128,
+              "percentage": 6
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-1"
+            }
+          },
+          {
+            "scenario_id": "revenue-d9de3ac5-1",
+            "business_type_id": "clinic-d9de3ac5-1",
+            "revenue": {
+              "value": 272828,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 32739,
+              "percentage": 6
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-3"
+            }
+          },
+          {
+            "scenario_id": "pricing-d9de3ac5-2",
+            "business_type_id": "distribution-d9de3ac5-2",
+            "revenue": {
+              "value": 430761,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 68921,
+              "percentage": 18
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-4"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 63,
+      "status": "success",
+      "task_id": "c5ee5404-6a05-45e0-8827-83981663e8dd",
+      "elapsed": 0.26058483123779297,
+      "payload": {
+        "task_name": "load-test-81f260c9-63",
+        "task_description": "Test task #63 generated for load testing",
+        "app_id": 861,
+        "compute": [
+          {
+            "scenario_id": "rebate-81f260c9-0",
+            "business_type_id": "retail-81f260c9-0",
+            "revenue": {
+              "value": 122614,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 6130,
+              "percentage": 13
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-3"
+            }
+          },
+          {
+            "scenario_id": "pricing-81f260c9-1",
+            "business_type_id": "wholesale-81f260c9-1",
+            "revenue": {
+              "value": 65302,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 9795,
+              "percentage": 6
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-3"
+            }
+          },
+          {
+            "scenario_id": "rebate-81f260c9-2",
+            "business_type_id": "clinic-81f260c9-2",
+            "revenue": {
+              "value": 872492,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 95974,
+              "percentage": 17
+            },
+            "speciality": {
+              "type": "geriatrics",
+              "region": "region-2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 64,
+      "status": "success",
+      "task_id": "3dd562c0-04ca-4d48-91c9-a70aa54abb28",
+      "elapsed": 0.27202486991882324,
+      "payload": {
+        "task_name": "load-test-d2071965-64",
+        "task_description": "Test task #64 generated for load testing",
+        "app_id": 609,
+        "compute": [
+          {
+            "scenario_id": "rebate-d2071965-0",
+            "business_type_id": "specialty-d2071965-0",
+            "revenue": {
+              "value": 286884,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 28688,
+              "percentage": 8
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-5"
+            }
+          },
+          {
+            "scenario_id": "cost-d2071965-1",
+            "business_type_id": "retail-d2071965-1",
+            "revenue": {
+              "value": 864953,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 172990,
+              "percentage": 16
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-5"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 65,
+      "status": "success",
+      "task_id": "ea66e38c-d260-4e98-a6a1-8b58c0812f36",
+      "elapsed": 0.25699496269226074,
+      "payload": {
+        "task_name": "load-test-3b2a1dd5-65",
+        "task_description": "Test task #65 generated for load testing",
+        "app_id": 126,
+        "compute": [
+          {
+            "scenario_id": "rebate-3b2a1dd5-0",
+            "business_type_id": "wholesale-3b2a1dd5-0",
+            "revenue": {
+              "value": 854178,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 85417,
+              "percentage": 10
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-2"
+            }
+          },
+          {
+            "scenario_id": "cost-3b2a1dd5-1",
+            "business_type_id": "wholesale-3b2a1dd5-1",
+            "revenue": {
+              "value": 537670,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 80650,
+              "percentage": 12
+            },
+            "speciality": {
+              "type": "pediatrics",
+              "region": "region-1"
+            }
+          },
+          {
+            "scenario_id": "market-3b2a1dd5-2",
+            "business_type_id": "specialty-3b2a1dd5-2",
+            "revenue": {
+              "value": 320332,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 19219,
+              "percentage": 14
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 66,
+      "status": "success",
+      "task_id": "fe5344ed-4c67-40ee-bd25-a4e3235f2dc3",
+      "elapsed": 0.297515869140625,
+      "payload": {
+        "task_name": "load-test-e399d734-66",
+        "task_description": "Test task #66 generated for load testing",
+        "app_id": 539,
+        "compute": [
+          {
+            "scenario_id": "rebate-e399d734-0",
+            "business_type_id": "wholesale-e399d734-0",
+            "revenue": {
+              "value": 345158,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 41418,
+              "percentage": 20
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 67,
+      "status": "success",
+      "task_id": "32b4fb40-174a-4f05-9bb6-c3c4977d9705",
+      "elapsed": 0.2823967933654785,
+      "payload": {
+        "task_name": "load-test-5efcbec4-67",
+        "task_description": "Test task #67 generated for load testing",
+        "app_id": 623,
+        "compute": [
+          {
+            "scenario_id": "forecast-5efcbec4-0",
+            "business_type_id": "wholesale-5efcbec4-0",
+            "revenue": {
+              "value": 852108,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 170421,
+              "percentage": 8
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-3"
+            }
+          },
+          {
+            "scenario_id": "forecast-5efcbec4-1",
+            "business_type_id": "retail-5efcbec4-1",
+            "revenue": {
+              "value": 773462,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 92815,
+              "percentage": 16
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-2"
+            }
+          },
+          {
+            "scenario_id": "rebate-5efcbec4-2",
+            "business_type_id": "clinic-5efcbec4-2",
+            "revenue": {
+              "value": 210158,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 39930,
+              "percentage": 11
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-5"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 68,
+      "status": "success",
+      "task_id": "56185c26-902a-4659-8ebe-b9ff75491393",
+      "elapsed": 0.2561042308807373,
+      "payload": {
+        "task_name": "load-test-f7f26f3e-68",
+        "task_description": "Test task #68 generated for load testing",
+        "app_id": 719,
+        "compute": [
+          {
+            "scenario_id": "rebate-f7f26f3e-0",
+            "business_type_id": "specialty-f7f26f3e-0",
+            "revenue": {
+              "value": 504469,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 70625,
+              "percentage": 6
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-5"
+            }
+          },
+          {
+            "scenario_id": "pricing-f7f26f3e-1",
+            "business_type_id": "wholesale-f7f26f3e-1",
+            "revenue": {
+              "value": 187659,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 9382,
+              "percentage": 18
+            },
+            "speciality": {
+              "type": "pediatrics",
+              "region": "region-1"
+            }
+          },
+          {
+            "scenario_id": "forecast-f7f26f3e-2",
+            "business_type_id": "specialty-f7f26f3e-2",
+            "revenue": {
+              "value": 980757,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 176536,
+              "percentage": 5
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 69,
+      "status": "success",
+      "task_id": "7bea4007-4335-404f-aa56-50989453d50c",
+      "elapsed": 0.2339611053466797,
+      "payload": {
+        "task_name": "load-test-107b305a-69",
+        "task_description": "Test task #69 generated for load testing",
+        "app_id": 264,
+        "compute": [
+          {
+            "scenario_id": "rebate-107b305a-0",
+            "business_type_id": "wholesale-107b305a-0",
+            "revenue": {
+              "value": 156714,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 10969,
+              "percentage": 7
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 70,
+      "status": "success",
+      "task_id": "62e53d2b-e5e6-4d94-8791-a2e098763696",
+      "elapsed": 0.29306983947753906,
+      "payload": {
+        "task_name": "load-test-16a34f65-70",
+        "task_description": "Test task #70 generated for load testing",
+        "app_id": 350,
+        "compute": [
+          {
+            "scenario_id": "rebate-16a34f65-0",
+            "business_type_id": "hospital-16a34f65-0",
+            "revenue": {
+              "value": 282945,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 50930,
+              "percentage": 6
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 71,
+      "status": "success",
+      "task_id": "de2f1d19-a0ac-4ab2-a63c-2fd7366a59c8",
+      "elapsed": 0.2766139507293701,
+      "payload": {
+        "task_name": "load-test-e0d6ffe9-71",
+        "task_description": "Test task #71 generated for load testing",
+        "app_id": 319,
+        "compute": [
+          {
+            "scenario_id": "rebate-e0d6ffe9-0",
+            "business_type_id": "wholesale-e0d6ffe9-0",
+            "revenue": {
+              "value": 717796,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 86135,
+              "percentage": 20
+            },
+            "speciality": {
+              "type": "pediatrics",
+              "region": "region-2"
+            }
+          },
+          {
+            "scenario_id": "market-e0d6ffe9-1",
+            "business_type_id": "specialty-e0d6ffe9-1",
+            "revenue": {
+              "value": 92908,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 7432,
+              "percentage": 10
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-2"
+            }
+          },
+          {
+            "scenario_id": "forecast-e0d6ffe9-2",
+            "business_type_id": "specialty-e0d6ffe9-2",
+            "revenue": {
+              "value": 953858,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 66770,
+              "percentage": 8
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 72,
+      "status": "success",
+      "task_id": "037fefa1-78ca-492b-907c-c40e2264d29b",
+      "elapsed": 0.2509586811065674,
+      "payload": {
+        "task_name": "load-test-1629db58-72",
+        "task_description": "Test task #72 generated for load testing",
+        "app_id": 176,
+        "compute": [
+          {
+            "scenario_id": "cost-1629db58-0",
+            "business_type_id": "clinic-1629db58-0",
+            "revenue": {
+              "value": 933407,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 93340,
+              "percentage": 13
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-5"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 73,
+      "status": "success",
+      "task_id": "57b815c3-0703-4d25-a780-271f628395c7",
+      "elapsed": 0.2348647117614746,
+      "payload": {
+        "task_name": "load-test-007ebc2b-73",
+        "task_description": "Test task #73 generated for load testing",
+        "app_id": 949,
+        "compute": [
+          {
+            "scenario_id": "cost-007ebc2b-0",
+            "business_type_id": "clinic-007ebc2b-0",
+            "revenue": {
+              "value": 54784,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 10956,
+              "percentage": 20
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 74,
+      "status": "success",
+      "task_id": "6caf17a8-7ee1-467f-92fe-50d09a62eb15",
+      "elapsed": 0.27374267578125,
+      "payload": {
+        "task_name": "load-test-30addfb7-74",
+        "task_description": "Test task #74 generated for load testing",
+        "app_id": 670,
+        "compute": [
+          {
+            "scenario_id": "rebate-30addfb7-0",
+            "business_type_id": "specialty-30addfb7-0",
+            "revenue": {
+              "value": 88513,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 13276,
+              "percentage": 5
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-3"
+            }
+          },
+          {
+            "scenario_id": "rebate-30addfb7-1",
+            "business_type_id": "retail-30addfb7-1",
+            "revenue": {
+              "value": 469136,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 75061,
+              "percentage": 6
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 75,
+      "status": "success",
+      "task_id": "5769cb1b-bde0-4832-a354-88d798e17e92",
+      "elapsed": 0.24633288383483887,
+      "payload": {
+        "task_name": "load-test-1f9e490d-75",
+        "task_description": "Test task #75 generated for load testing",
+        "app_id": 731,
+        "compute": [
+          {
+            "scenario_id": "revenue-1f9e490d-0",
+            "business_type_id": "retail-1f9e490d-0",
+            "revenue": {
+              "value": 361144,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 18057,
+              "percentage": 15
+            },
+            "speciality": {
+              "type": "pediatrics",
+              "region": "region-4"
+            }
+          },
+          {
+            "scenario_id": "pricing-1f9e490d-1",
+            "business_type_id": "distribution-1f9e490d-1",
+            "revenue": {
+              "value": 895566,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 89556,
+              "percentage": 14
+            },
+            "speciality": {
+              "type": "geriatrics",
+              "region": "region-1"
+            }
+          },
+          {
+            "scenario_id": "forecast-1f9e490d-2",
+            "business_type_id": "specialty-1f9e490d-2",
+            "revenue": {
+              "value": 140391,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 18250,
+              "percentage": 15
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-5"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 76,
+      "status": "success",
+      "task_id": "67e4aeb9-ad55-4b66-a968-6e0ca24d09f7",
+      "elapsed": 0.24447059631347656,
+      "payload": {
+        "task_name": "load-test-2c7f3926-76",
+        "task_description": "Test task #76 generated for load testing",
+        "app_id": 610,
+        "compute": [
+          {
+            "scenario_id": "rebate-2c7f3926-0",
+            "business_type_id": "wholesale-2c7f3926-0",
+            "revenue": {
+              "value": 121041,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 6052,
+              "percentage": 12
+            },
+            "speciality": {
+              "type": "geriatrics",
+              "region": "region-1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 77,
+      "status": "success",
+      "task_id": "d98338fa-4456-4332-8ab3-bb5c43808e86",
+      "elapsed": 0.23789691925048828,
+      "payload": {
+        "task_name": "load-test-8b931141-77",
+        "task_description": "Test task #77 generated for load testing",
+        "app_id": 426,
+        "compute": [
+          {
+            "scenario_id": "market-8b931141-0",
+            "business_type_id": "distribution-8b931141-0",
+            "revenue": {
+              "value": 501465,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 65190,
+              "percentage": 16
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-2"
+            }
+          },
+          {
+            "scenario_id": "revenue-8b931141-1",
+            "business_type_id": "clinic-8b931141-1",
+            "revenue": {
+              "value": 703576,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 56286,
+              "percentage": 6
+            },
+            "speciality": {
+              "type": "geriatrics",
+              "region": "region-2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 78,
+      "status": "success",
+      "task_id": "983a02c8-75b6-478b-99ac-ee928b8c42ed",
+      "elapsed": 0.24091005325317383,
+      "payload": {
+        "task_name": "load-test-885c36d2-78",
+        "task_description": "Test task #78 generated for load testing",
+        "app_id": 330,
+        "compute": [
+          {
+            "scenario_id": "forecast-885c36d2-0",
+            "business_type_id": "hospital-885c36d2-0",
+            "revenue": {
+              "value": 324182,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 64836,
+              "percentage": 9
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-4"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 79,
+      "status": "success",
+      "task_id": "60cca645-c788-4795-b6f4-bae62be9d521",
+      "elapsed": 0.23170709609985352,
+      "payload": {
+        "task_name": "load-test-f31e8c26-79",
+        "task_description": "Test task #79 generated for load testing",
+        "app_id": 489,
+        "compute": [
+          {
+            "scenario_id": "market-f31e8c26-0",
+            "business_type_id": "retail-f31e8c26-0",
+            "revenue": {
+              "value": 995796,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 199159,
+              "percentage": 17
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-4"
+            }
+          },
+          {
+            "scenario_id": "market-f31e8c26-1",
+            "business_type_id": "specialty-f31e8c26-1",
+            "revenue": {
+              "value": 724031,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 115844,
+              "percentage": 12
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 80,
+      "status": "success",
+      "task_id": "28f21729-8576-484a-97d5-9cfc102a8188",
+      "elapsed": 0.25745701789855957,
+      "payload": {
+        "task_name": "load-test-66e65667-80",
+        "task_description": "Test task #80 generated for load testing",
+        "app_id": 696,
+        "compute": [
+          {
+            "scenario_id": "market-66e65667-0",
+            "business_type_id": "hospital-66e65667-0",
+            "revenue": {
+              "value": 63758,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 12114,
+              "percentage": 9
+            },
+            "speciality": {
+              "type": "pediatrics",
+              "region": "region-5"
+            }
+          },
+          {
+            "scenario_id": "rebate-66e65667-1",
+            "business_type_id": "specialty-66e65667-1",
+            "revenue": {
+              "value": 169440,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 18638,
+              "percentage": 11
+            },
+            "speciality": {
+              "type": "geriatrics",
+              "region": "region-2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 81,
+      "status": "success",
+      "task_id": "2af72a7e-aaab-415f-92aa-0184c1451d9c",
+      "elapsed": 0.20171809196472168,
+      "payload": {
+        "task_name": "load-test-c0ab8e7e-81",
+        "task_description": "Test task #81 generated for load testing",
+        "app_id": 265,
+        "compute": [
+          {
+            "scenario_id": "market-c0ab8e7e-0",
+            "business_type_id": "retail-c0ab8e7e-0",
+            "revenue": {
+              "value": 341589,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 47822,
+              "percentage": 12
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 82,
+      "status": "success",
+      "task_id": "d5105c8c-ed66-43f0-8cdd-7c6eb0ad9ca3",
+      "elapsed": 0.20203709602355957,
+      "payload": {
+        "task_name": "load-test-255dcee8-82",
+        "task_description": "Test task #82 generated for load testing",
+        "app_id": 955,
+        "compute": [
+          {
+            "scenario_id": "forecast-255dcee8-0",
+            "business_type_id": "hospital-255dcee8-0",
+            "revenue": {
+              "value": 178647,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 14291,
+              "percentage": 12
+            },
+            "speciality": {
+              "type": "pediatrics",
+              "region": "region-3"
+            }
+          },
+          {
+            "scenario_id": "cost-255dcee8-1",
+            "business_type_id": "wholesale-255dcee8-1",
+            "revenue": {
+              "value": 239032,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 35854,
+              "percentage": 8
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-5"
+            }
+          },
+          {
+            "scenario_id": "rebate-255dcee8-2",
+            "business_type_id": "wholesale-255dcee8-2",
+            "revenue": {
+              "value": 413347,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 41334,
+              "percentage": 7
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 83,
+      "status": "success",
+      "task_id": "1e797205-7921-400c-8f79-8a8963a63894",
+      "elapsed": 0.21363401412963867,
+      "payload": {
+        "task_name": "load-test-db9fd306-83",
+        "task_description": "Test task #83 generated for load testing",
+        "app_id": 112,
+        "compute": [
+          {
+            "scenario_id": "forecast-db9fd306-0",
+            "business_type_id": "distribution-db9fd306-0",
+            "revenue": {
+              "value": 744898,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 37244,
+              "percentage": 20
+            },
+            "speciality": {
+              "type": "pediatrics",
+              "region": "region-3"
+            }
+          },
+          {
+            "scenario_id": "pricing-db9fd306-1",
+            "business_type_id": "specialty-db9fd306-1",
+            "revenue": {
+              "value": 992928,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 139009,
+              "percentage": 12
+            },
+            "speciality": {
+              "type": "geriatrics",
+              "region": "region-3"
+            }
+          },
+          {
+            "scenario_id": "pricing-db9fd306-2",
+            "business_type_id": "hospital-db9fd306-2",
+            "revenue": {
+              "value": 524336,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 62920,
+              "percentage": 20
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-4"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 84,
+      "status": "success",
+      "task_id": "57ff1f41-f2d3-4e59-b4f2-0796b12525f7",
+      "elapsed": 0.21229910850524902,
+      "payload": {
+        "task_name": "load-test-e7977977-84",
+        "task_description": "Test task #84 generated for load testing",
+        "app_id": 360,
+        "compute": [
+          {
+            "scenario_id": "revenue-e7977977-0",
+            "business_type_id": "hospital-e7977977-0",
+            "revenue": {
+              "value": 714804,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 35740,
+              "percentage": 11
+            },
+            "speciality": {
+              "type": "pediatrics",
+              "region": "region-4"
+            }
+          },
+          {
+            "scenario_id": "forecast-e7977977-1",
+            "business_type_id": "retail-e7977977-1",
+            "revenue": {
+              "value": 697676,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 41860,
+              "percentage": 17
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-4"
+            }
+          },
+          {
+            "scenario_id": "cost-e7977977-2",
+            "business_type_id": "retail-e7977977-2",
+            "revenue": {
+              "value": 860540,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 103264,
+              "percentage": 18
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-5"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 85,
+      "status": "success",
+      "task_id": "8981d2c2-7c87-4478-be93-e9309f58d33b",
+      "elapsed": 0.20797967910766602,
+      "payload": {
+        "task_name": "load-test-fff7e4e5-85",
+        "task_description": "Test task #85 generated for load testing",
+        "app_id": 395,
+        "compute": [
+          {
+            "scenario_id": "pricing-fff7e4e5-0",
+            "business_type_id": "retail-fff7e4e5-0",
+            "revenue": {
+              "value": 948410,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 189682,
+              "percentage": 6
+            },
+            "speciality": {
+              "type": "pediatrics",
+              "region": "region-5"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 86,
+      "status": "success",
+      "task_id": "c7a634e3-9511-4dc6-a8e6-244efc995f47",
+      "elapsed": 0.2117321491241455,
+      "payload": {
+        "task_name": "load-test-69c0207a-86",
+        "task_description": "Test task #86 generated for load testing",
+        "app_id": 136,
+        "compute": [
+          {
+            "scenario_id": "market-69c0207a-0",
+            "business_type_id": "clinic-69c0207a-0",
+            "revenue": {
+              "value": 854401,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 153792,
+              "percentage": 9
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-2"
+            }
+          },
+          {
+            "scenario_id": "market-69c0207a-1",
+            "business_type_id": "wholesale-69c0207a-1",
+            "revenue": {
+              "value": 824896,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 164979,
+              "percentage": 8
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-5"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 87,
+      "status": "success",
+      "task_id": "4c3474c3-745c-466e-b7af-63ec7296ff3e",
+      "elapsed": 0.21003484725952148,
+      "payload": {
+        "task_name": "load-test-11792d55-87",
+        "task_description": "Test task #87 generated for load testing",
+        "app_id": 902,
+        "compute": [
+          {
+            "scenario_id": "revenue-11792d55-0",
+            "business_type_id": "distribution-11792d55-0",
+            "revenue": {
+              "value": 320343,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 48051,
+              "percentage": 7
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-3"
+            }
+          },
+          {
+            "scenario_id": "cost-11792d55-1",
+            "business_type_id": "wholesale-11792d55-1",
+            "revenue": {
+              "value": 95613,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 19122,
+              "percentage": 10
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-5"
+            }
+          },
+          {
+            "scenario_id": "forecast-11792d55-2",
+            "business_type_id": "hospital-11792d55-2",
+            "revenue": {
+              "value": 150323,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 24051,
+              "percentage": 10
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-4"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 88,
+      "status": "success",
+      "task_id": "9c109ad5-4b93-474b-bae4-47e9a38bb787",
+      "elapsed": 0.21590185165405273,
+      "payload": {
+        "task_name": "load-test-e07ba3b0-88",
+        "task_description": "Test task #88 generated for load testing",
+        "app_id": 794,
+        "compute": [
+          {
+            "scenario_id": "pricing-e07ba3b0-0",
+            "business_type_id": "specialty-e07ba3b0-0",
+            "revenue": {
+              "value": 563869,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 90219,
+              "percentage": 6
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-4"
+            }
+          },
+          {
+            "scenario_id": "cost-e07ba3b0-1",
+            "business_type_id": "specialty-e07ba3b0-1",
+            "revenue": {
+              "value": 214704,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 40793,
+              "percentage": 14
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-3"
+            }
+          },
+          {
+            "scenario_id": "forecast-e07ba3b0-2",
+            "business_type_id": "specialty-e07ba3b0-2",
+            "revenue": {
+              "value": 931961,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 46598,
+              "percentage": 14
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-4"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 89,
+      "status": "success",
+      "task_id": "0b9557f3-94b7-45dd-831a-3b97fe13a0e4",
+      "elapsed": 0.2200610637664795,
+      "payload": {
+        "task_name": "load-test-8ef1584f-89",
+        "task_description": "Test task #89 generated for load testing",
+        "app_id": 430,
+        "compute": [
+          {
+            "scenario_id": "revenue-8ef1584f-0",
+            "business_type_id": "wholesale-8ef1584f-0",
+            "revenue": {
+              "value": 354390,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 42526,
+              "percentage": 7
+            },
+            "speciality": {
+              "type": "pediatrics",
+              "region": "region-3"
+            }
+          },
+          {
+            "scenario_id": "pricing-8ef1584f-1",
+            "business_type_id": "distribution-8ef1584f-1",
+            "revenue": {
+              "value": 600120,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 72014,
+              "percentage": 9
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 90,
+      "status": "success",
+      "task_id": "e66a6c4a-9209-40ed-8eae-f8d7c08f1bbb",
+      "elapsed": 0.23367762565612793,
+      "payload": {
+        "task_name": "load-test-71a9137c-90",
+        "task_description": "Test task #90 generated for load testing",
+        "app_id": 148,
+        "compute": [
+          {
+            "scenario_id": "pricing-71a9137c-0",
+            "business_type_id": "retail-71a9137c-0",
+            "revenue": {
+              "value": 29840,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 2088,
+              "percentage": 17
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 91,
+      "status": "success",
+      "task_id": "a5875e18-c162-4736-859a-58d0f57ab7c1",
+      "elapsed": 0.22374987602233887,
+      "payload": {
+        "task_name": "load-test-1c67d25a-91",
+        "task_description": "Test task #91 generated for load testing",
+        "app_id": 423,
+        "compute": [
+          {
+            "scenario_id": "revenue-1c67d25a-0",
+            "business_type_id": "distribution-1c67d25a-0",
+            "revenue": {
+              "value": 650508,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 65050,
+              "percentage": 11
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-3"
+            }
+          },
+          {
+            "scenario_id": "pricing-1c67d25a-1",
+            "business_type_id": "wholesale-1c67d25a-1",
+            "revenue": {
+              "value": 625483,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 37528,
+              "percentage": 13
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-1"
+            }
+          },
+          {
+            "scenario_id": "revenue-1c67d25a-2",
+            "business_type_id": "clinic-1c67d25a-2",
+            "revenue": {
+              "value": 460308,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 82855,
+              "percentage": 17
+            },
+            "speciality": {
+              "type": "geriatrics",
+              "region": "region-1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 92,
+      "status": "success",
+      "task_id": "e001a636-8866-4d2e-8225-f56218276327",
+      "elapsed": 0.24138903617858887,
+      "payload": {
+        "task_name": "load-test-07e945c2-92",
+        "task_description": "Test task #92 generated for load testing",
+        "app_id": 191,
+        "compute": [
+          {
+            "scenario_id": "market-07e945c2-0",
+            "business_type_id": "specialty-07e945c2-0",
+            "revenue": {
+              "value": 603279,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 84459,
+              "percentage": 14
+            },
+            "speciality": {
+              "type": "geriatrics",
+              "region": "region-3"
+            }
+          },
+          {
+            "scenario_id": "rebate-07e945c2-1",
+            "business_type_id": "wholesale-07e945c2-1",
+            "revenue": {
+              "value": 926353,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 166743,
+              "percentage": 13
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-2"
+            }
+          },
+          {
+            "scenario_id": "rebate-07e945c2-2",
+            "business_type_id": "hospital-07e945c2-2",
+            "revenue": {
+              "value": 615948,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 104711,
+              "percentage": 15
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-5"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 93,
+      "status": "success",
+      "task_id": "1d83d1c0-d991-466b-9885-3132aba1bc41",
+      "elapsed": 0.2204599380493164,
+      "payload": {
+        "task_name": "load-test-02462790-93",
+        "task_description": "Test task #93 generated for load testing",
+        "app_id": 774,
+        "compute": [
+          {
+            "scenario_id": "rebate-02462790-0",
+            "business_type_id": "specialty-02462790-0",
+            "revenue": {
+              "value": 279551,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 55910,
+              "percentage": 6
+            },
+            "speciality": {
+              "type": "pediatrics",
+              "region": "region-2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 94,
+      "status": "success",
+      "task_id": "339d14b8-688d-4838-80ed-a4ef334ed6ac",
+      "elapsed": 0.19917893409729004,
+      "payload": {
+        "task_name": "load-test-604be388-94",
+        "task_description": "Test task #94 generated for load testing",
+        "app_id": 850,
+        "compute": [
+          {
+            "scenario_id": "cost-604be388-0",
+            "business_type_id": "wholesale-604be388-0",
+            "revenue": {
+              "value": 112745,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 21421,
+              "percentage": 5
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 95,
+      "status": "success",
+      "task_id": "f089e691-25ca-4217-9fb8-394c17a77b8f",
+      "elapsed": 0.2164599895477295,
+      "payload": {
+        "task_name": "load-test-0758e672-95",
+        "task_description": "Test task #95 generated for load testing",
+        "app_id": 916,
+        "compute": [
+          {
+            "scenario_id": "pricing-0758e672-0",
+            "business_type_id": "retail-0758e672-0",
+            "revenue": {
+              "value": 417314,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 45904,
+              "percentage": 12
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-5"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 96,
+      "status": "success",
+      "task_id": "33545c3a-14f7-4cf5-83aa-42b34e5f2bf9",
+      "elapsed": 0.215407133102417,
+      "payload": {
+        "task_name": "load-test-7ea34c92-96",
+        "task_description": "Test task #96 generated for load testing",
+        "app_id": 351,
+        "compute": [
+          {
+            "scenario_id": "cost-7ea34c92-0",
+            "business_type_id": "distribution-7ea34c92-0",
+            "revenue": {
+              "value": 178321,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 26748,
+              "percentage": 10
+            },
+            "speciality": {
+              "type": "pediatrics",
+              "region": "region-3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 97,
+      "status": "success",
+      "task_id": "8905c6a6-17ec-48ab-865b-a1bce922f438",
+      "elapsed": 0.2213270664215088,
+      "payload": {
+        "task_name": "load-test-58e2d309-97",
+        "task_description": "Test task #97 generated for load testing",
+        "app_id": 804,
+        "compute": [
+          {
+            "scenario_id": "pricing-58e2d309-0",
+            "business_type_id": "wholesale-58e2d309-0",
+            "revenue": {
+              "value": 667153,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 93401,
+              "percentage": 10
+            },
+            "speciality": {
+              "type": "pediatrics",
+              "region": "region-4"
+            }
+          },
+          {
+            "scenario_id": "market-58e2d309-1",
+            "business_type_id": "hospital-58e2d309-1",
+            "revenue": {
+              "value": 648665,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 64866,
+              "percentage": 8
+            },
+            "speciality": {
+              "type": "geriatrics",
+              "region": "region-2"
+            }
+          },
+          {
+            "scenario_id": "forecast-58e2d309-2",
+            "business_type_id": "hospital-58e2d309-2",
+            "revenue": {
+              "value": 509896,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 56088,
+              "percentage": 6
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 98,
+      "status": "success",
+      "task_id": "62987ba4-f519-4d96-a95a-c4be62bfd216",
+      "elapsed": 0.21834301948547363,
+      "payload": {
+        "task_name": "load-test-afc8de45-98",
+        "task_description": "Test task #98 generated for load testing",
+        "app_id": 231,
+        "compute": [
+          {
+            "scenario_id": "rebate-afc8de45-0",
+            "business_type_id": "specialty-afc8de45-0",
+            "revenue": {
+              "value": 222540,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 20028,
+              "percentage": 11
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-4"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 99,
+      "status": "success",
+      "task_id": "83bd0142-83b3-49c0-b6bf-f408e2c4528f",
+      "elapsed": 0.22109007835388184,
+      "payload": {
+        "task_name": "load-test-cb4f821f-99",
+        "task_description": "Test task #99 generated for load testing",
+        "app_id": 381,
+        "compute": [
+          {
+            "scenario_id": "forecast-cb4f821f-0",
+            "business_type_id": "wholesale-cb4f821f-0",
+            "revenue": {
+              "value": 255387,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 38308,
+              "percentage": 15
+            },
+            "speciality": {
+              "type": "pediatrics",
+              "region": "region-3"
+            }
+          },
+          {
+            "scenario_id": "pricing-cb4f821f-1",
+            "business_type_id": "distribution-cb4f821f-1",
+            "revenue": {
+              "value": 449957,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 71993,
+              "percentage": 10
+            },
+            "speciality": {
+              "type": "oncology",
+              "region": "region-4"
+            }
+          },
+          {
+            "scenario_id": "forecast-cb4f821f-2",
+            "business_type_id": "hospital-cb4f821f-2",
+            "revenue": {
+              "value": 943302,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 169794,
+              "percentage": 12
+            },
+            "speciality": {
+              "type": "neurology",
+              "region": "region-1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 100,
+      "status": "success",
+      "task_id": "d4a6004d-d222-4346-b1a8-a8434cd0fde0",
+      "elapsed": 0.22912812232971191,
+      "payload": {
+        "task_name": "load-test-748b54b1-100",
+        "task_description": "Test task #100 generated for load testing",
+        "app_id": 311,
+        "compute": [
+          {
+            "scenario_id": "market-748b54b1-0",
+            "business_type_id": "hospital-748b54b1-0",
+            "revenue": {
+              "value": 948897,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 47444,
+              "percentage": 17
+            },
+            "speciality": {
+              "type": "cardiology",
+              "region": "region-3"
+            }
+          },
+          {
+            "scenario_id": "pricing-748b54b1-1",
+            "business_type_id": "wholesale-748b54b1-1",
+            "revenue": {
+              "value": 390576,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 62492,
+              "percentage": 15
+            },
+            "speciality": {
+              "type": "primary",
+              "region": "region-1"
+            }
+          },
+          {
+            "scenario_id": "rebate-748b54b1-2",
+            "business_type_id": "retail-748b54b1-2",
+            "revenue": {
+              "value": 34973,
+              "currency": "USD"
+            },
+            "rebate": {
+              "value": 2448,
+              "percentage": 19
+            },
+            "speciality": {
+              "type": "geriatrics",
+              "region": "region-5"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,39 +1,28 @@
 [project]
-name = "orchestrator-emulator"
+name = "truecost_orchestrator"
 version = "0.1.0"
-description = "Service to orchestrate processing across various sub-services"
+description = "Default template for PDM package"
 authors = [
-    {name = "Your Name", email = "your.email@example.com"},
+    {name = "Neeraj Narayanan", email = "nfornj@gmail.com"},
 ]
-requires-python = ">=3.12,<3.13"
+dependencies = [
+    "fastapi==0.104.0",
+    "uvicorn==0.23.2",
+    "pydantic==2.4.2",
+    "pydantic-settings==2.0.3",
+    "redis==5.0.1",
+    "asyncpg==0.28.0",
+    "python-json-logger==2.0.7",
+    "azure-eventhub==5.11.5",
+    "azure-identity==1.15.0",
+    "aiohttp==3.9.1",
+    "kafka-python==2.0.2",
+    "confluent-kafka>=2.8.2",
+]
+requires-python = "==3.10.*"
 readme = "README.md"
 license = {text = "MIT"}
 
-dependencies = [
-    "fastapi==0.109.2",
-    "uvicorn==0.27.1",
-    "httpx==0.26.0",
-    "pydantic==2.6.1",
-    "azure-eventhub==5.11.5",
-    "azure-eventhub-checkpointstoreblob-aio==1.1.4",
-    "python-dotenv==1.0.0",
-    "azure-storage-blob==12.19.0",
-    "confluent-kafka==2.3.0",
-    "sqlalchemy==2.0.27",
-    "psycopg2-binary==2.9.9",
-    "alembic==1.13.1",
-    "asyncpg==0.29.0",
-]
-
-[build-system]
-requires = ["pdm-backend"]
-build-backend = "pdm.backend"
 
 [tool.pdm]
 distribution = false
-
-[tool.pdm.dev-dependencies]
-dev = [
-    "pytest>=7.4.0",
-    "pytest-asyncio>=0.21.1",
-] 
